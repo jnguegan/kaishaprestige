@@ -250,4 +250,151 @@ footer {
   .services {
     padding: 100px 30px;
   }
+   /* WhatsApp icon in nav */
+.wa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(198,167,94,0.55);
+  border-radius: 999px;
+  color: #C6A75E;
+  transition: all 0.25s ease;
+}
+
+.wa-icon:hover {
+  background: rgba(198,167,94,0.12);
+  border-color: #C6A75E;
+}
+
+.wa-icon img {
+  width: 18px;
+  height: 18px;
+  filter: none;
+}
+
+/* Request page layout */
+.page {
+  padding-top: 92px; /* accounts for fixed nav */
+}
+
+.page-hero {
+  padding: 70px 20px 30px;
+  text-align: center;
+}
+
+.page-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  color: #D6D6D6;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.form-wrap {
+  padding: 40px 20px 110px;
+}
+
+.request-form {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #141417;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 34px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #EDEDED;
+  font-size: 14px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: #0E0E11;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #F2F2F2;
+  padding: 12px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.field textarea { resize: vertical; }
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(198,167,94,0.8);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-solid {
+  padding: 14px 28px;
+  border: 1px solid #C6A75E;
+  background: #C6A75E;
+  color: #0A0A0C;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.btn-solid:hover {
+  filter: brightness(1.05);
+}
+
+.btn-outline {
+  padding: 14px 28px;
+  border: 1px solid rgba(198,167,94,0.85);
+  color: #C6A75E;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(198,167,94,0.12);
+}
+
+.small-note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #AFAFB3;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .request-form { padding: 22px; }
+}
 }
