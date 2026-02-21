@@ -136,56 +136,148 @@
 <script src="js/i18n.js"></script>
 
 <script>
-  const WA_NUMBER = "33783823945";
+  (function () {
+    const WA_NUMBER = "33783823945";
 
-  function val(selector) {
-    const el = document.querySelector(selector);
-    return el ? (el.value || "").trim() : "";
-  }
+    function val(selector) {
+      const el = document.querySelector(selector);
+      return el ? (el.value || "").trim() : "";
+    }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const waBtn = document.getElementById("whatsappFromForm");
-    if (!waBtn) return;
+    function getLang() {
+      const sel = document.getElementById("langSelect");
+      const stored = localStorage.getItem("pap_lang") || localStorage.getItem("lang") || localStorage.getItem("ks_lang");
+      return (sel && sel.value) || stored || "en";
+    }
 
-    waBtn.addEventListener("click", (e) => {
-      e.preventDefault();
+    // Optional: make service values nicer
+    const SERVICE_LABELS = {
+      en: {
+        private_aviation: "Private Aviation",
+        chauffeur: "Luxury Chauffeur",
+        relocation: "Relocation & Logistics",
+        yacht: "Yacht Charter",
+        security: "Security Escort",
+        other: "Other"
+      },
+      fr: {
+        private_aviation: "Aviation Privée",
+        chauffeur: "Chauffeur de Luxe",
+        relocation: "Relocalisation & Logistique",
+        yacht: "Location de Yacht",
+        security: "Escorte Sécurité",
+        other: "Autre"
+      },
+      es: {
+        private_aviation: "Aviación Privada",
+        chauffeur: "Chófer de Lujo",
+        relocation: "Reubicación y Logística",
+        yacht: "Alquiler de Yate",
+        security: "Escolta de Seguridad",
+        other: "Otro"
+      }
+    };
 
-      const fullName = val("input[name='full_name']");
-      const email = val("input[name='email']");
-      const phone = val("input[name='phone']");
-      const service = val("select[name='service']");
-      const dateFrom = val("input[name='date_from']");
-      const dateTo = val("input[name='date_to']");
-      const from = val("input[name='from']");
-      const to = val("input[name='to']");
-      const details = val("textarea[name='details']");
+    function buildMessage(lang, data) {
+      const serviceLabel = (SERVICE_LABELS[lang] && SERVICE_LABELS[lang][data.service]) ||
+                           (SERVICE_LABELS.en[data.service]) || data.service || "-";
 
-      const msg =
-`Hello KS Group Concierge,
+      if (lang === "fr") {
+        return `Bonjour KS Group Concierge,
+
+Je souhaite organiser une assistance concierge avec les informations suivantes :
+
+• Nom : ${data.fullName || "-"}
+• Email : ${data.email || "-"}
+• Téléphone / WhatsApp : ${data.phone || "-"}
+
+• Service : ${serviceLabel}
+• Date/Heure (Début) : ${data.dateFrom || "-"}
+• Date/Heure (Fin) : ${data.dateTo || "-"}
+• Départ : ${data.from || "-"}
+• Destination : ${data.to || "-"}
+
+• Détails :
+${data.details || "-"}
+
+Merci de confirmer les disponibilités et les prochaines étapes.
+
+Cordialement.`;
+      }
+
+      if (lang === "es") {
+        return `Hola KS Group Concierge,
+
+Me gustaría organizar asistencia de concierge con los siguientes detalles:
+
+• Nombre: ${data.fullName || "-"}
+• Email: ${data.email || "-"}
+• Teléfono / WhatsApp: ${data.phone || "-"}
+
+• Servicio: ${serviceLabel}
+• Fecha/Hora (Desde): ${data.dateFrom || "-"}
+• Fecha/Hora (Hasta): ${data.dateTo || "-"}
+• Origen: ${data.from || "-"}
+• Destino: ${data.to || "-"}
+
+• Detalles:
+${data.details || "-"}
+
+Por favor, confirme disponibilidad y próximos pasos.
+
+Gracias.`;
+      }
+
+      // English default
+      return `Hello KS Group Concierge,
 
 I would like to arrange concierge support with the following details:
 
-• Name: ${fullName || "-"}
-• Email: ${email || "-"}
-• Phone / WhatsApp: ${phone || "-"}
+• Name: ${data.fullName || "-"}
+• Email: ${data.email || "-"}
+• Phone / WhatsApp: ${data.phone || "-"}
 
-• Service: ${service || "-"}
-• Date/Time (From): ${dateFrom || "-"}
-• Date/Time (To): ${dateTo || "-"}
-• From: ${from || "-"}
-• To: ${to || "-"}
+• Service: ${serviceLabel}
+• Date/Time (From): ${data.dateFrom || "-"}
+• Date/Time (To): ${data.dateTo || "-"}
+• From: ${data.from || "-"}
+• To: ${data.to || "-"}
 
 • Additional details:
-${details || "-"}
+${data.details || "-"}
 
 Please confirm availability and next steps.
 
 Thank you.`;
+    }
 
-      const url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
-      window.open(url, "_blank", "noopener");
+    document.addEventListener("DOMContentLoaded", () => {
+      const waBtn = document.getElementById("whatsappFromForm"); // your working ID
+      if (!waBtn) return;
+
+      waBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const lang = getLang();
+
+        const data = {
+          fullName: val("input[name='full_name']"),
+          email: val("input[name='email']"),
+          phone: val("input[name='phone']"),
+          service: val("select[name='service']"),
+          dateFrom: val("input[name='date_from']"),
+          dateTo: val("input[name='date_to']"),
+          from: val("input[name='from']"),
+          to: val("input[name='to']"),
+          details: val("textarea[name='details']")
+        };
+
+        const msg = buildMessage(lang, data);
+        const url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+        window.open(url, "_blank", "noopener");
+      });
     });
-  });
+  })();
 </script>
 
 </body>
