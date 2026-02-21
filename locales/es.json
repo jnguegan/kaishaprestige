@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "how": "Cómo Funciona",
+    "request": "Solicitud",
+    "login": "Acceso"
+  },
+  "hero": {
+    "title": "Diseñado para el Movimiento de Élite",
+    "subtitle": "Servicios de conserjería de precisión para atletas y profesionales de alto rendimiento.",
+    "cta": "Solicitar Servicio"
+  },
+  "services": {
+    "title": "Servicios de Movilidad de Precisión",
+    "aviation": {
+      "title": "Aviación Privada",
+      "text": "Jets chárter y terminales VIP alineados con calendarios de rendimiento."
+    },
+    "ground": {
+      "title": "Movilidad Terrestre",
+      "text": "Vehículos de lujo discretos con chófer profesional."
+    },
+    "relocation": {
+      "title": "Reubicación y Logística",
+      "text": "Transiciones premium entre clubes, ciudades y países."
+    }
+  }
+}
