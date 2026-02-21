@@ -1,5 +1,6 @@
 {
   "nav": {
+    "home": "Inicio",
     "services": "Servicios",
     "how": "Cómo Funciona",
     "request": "Solicitud",
@@ -24,5 +25,23 @@
       "title": "Reubicación y Logística",
       "text": "Transiciones premium entre clubes, ciudades y países."
     }
+  },
+  "request": {
+    "title": "Solicitar Servicio",
+    "subtitle": "Comparte tu solicitud o itinerario. Respondemos rápido con opciones y confirmación.",
+    "fullNameLabel": "Nombre completo",
+    "emailLabel": "Email",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "serviceLabel": "Servicio",
+    "servicePlaceholder": "Selecciona un servicio",
+    "dateFromLabel": "Fecha / Hora (Desde)",
+    "dateToLabel": "Fecha / Hora (Hasta)",
+    "fromLabel": "Origen",
+    "toLabel": "Destino",
+    "detailsLabel": "Detalles",
+    "detailsPlaceholder": "Pasajeros, equipaje, preferencias, dirección de recogida, número de vuelo, plazos, etc.",
+    "submitBtn": "Enviar solicitud",
+    "whatsappBtn": "WhatsApp",
+    "note": "Discreción garantizada. No publicamos información del cliente."
   }
 }
