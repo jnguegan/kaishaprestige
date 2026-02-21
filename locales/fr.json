@@ -1,5 +1,6 @@
 {
   "nav": {
+    "home": "Accueil",
     "services": "Services",
     "how": "Fonctionnement",
     "request": "Demande",
@@ -24,5 +25,23 @@
       "title": "Relocalisation & Logistique",
       "text": "Transitions haut de gamme entre clubs, villes et pays."
     }
+  },
+  "request": {
+    "title": "Faire une Demande",
+    "subtitle": "Partagez votre demande ou itinéraire. Nous répondons rapidement avec options et confirmation.",
+    "fullNameLabel": "Nom complet",
+    "emailLabel": "Email",
+    "phoneLabel": "Téléphone / WhatsApp",
+    "serviceLabel": "Service",
+    "servicePlaceholder": "Choisir un service",
+    "dateFromLabel": "Date / Heure (Début)",
+    "dateToLabel": "Date / Heure (Fin)",
+    "fromLabel": "Départ",
+    "toLabel": "Destination",
+    "detailsLabel": "Détails",
+    "detailsPlaceholder": "Passagers, bagages, préférences, adresse de prise en charge, numéro de vol, délais, etc.",
+    "submitBtn": "Envoyer la demande",
+    "whatsappBtn": "WhatsApp",
+    "note": "Discrétion garantie. Nous ne publions aucune information client."
   }
 }
