@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "services": "Services",
+    "how": "How It Works",
+    "request": "Request",
+    "login": "Login"
+  },
+  "hero": {
+    "title": "Engineered for Elite Movement",
+    "subtitle": "Precision concierge services for athletes and high-performance professionals.",
+    "cta": "Request Concierge"
+  },
+  "services": {
+    "title": "Precision Mobility Services",
+    "aviation": {
+      "title": "Private Aviation",
+      "text": "Chartered jets and VIP terminals aligned with performance schedules."
+    },
+    "ground": {
+      "title": "Ground Mobility",
+      "text": "Discreet luxury vehicles with professional chauffeurs worldwide."
+    },
+    "relocation": {
+      "title": "Relocation & Logistics",
+      "text": "White-glove transitions between clubs, cities, and countries."
+    }
+  }
+}
