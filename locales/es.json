@@ -2,33 +2,18 @@
   "nav": {
     "home": "Inicio",
     "services": "Servicios",
-    "how": "Cómo Funciona",
+    "how": "Cómo funciona",
     "request": "Solicitud",
     "login": "Acceso"
   },
   "hero": {
     "title": "Diseñado para el Movimiento de Élite",
     "subtitle": "KS Group Concierge ofrece soluciones de movilidad de precisión para atletas y profesionales de alto rendimiento.",
-    "cta": "Solicitar Servicio"
-  },
-  "services": {
-    "title": "Servicios de Movilidad de Precisión",
-    "aviation": {
-      "title": "Aviación Privada",
-      "text": "Jets chárter y terminales VIP alineados con calendarios de rendimiento."
-    },
-    "ground": {
-      "title": "Movilidad Terrestre",
-      "text": "Vehículos de lujo discretos con chófer profesional."
-    },
-    "relocation": {
-      "title": "Reubicación y Logística",
-      "text": "Transiciones premium entre clubes, ciudades y países."
-    }
+    "cta": "Solicitar servicio"
   },
   "request": {
-    "title": "Solicitar Servicio",
-    "subtitle": "Comparte tu solicitud o itinerario. Respondemos rápido con opciones y confirmación.",
+    "title": "Solicitud de Concierge",
+    "subtitle": "Comparte tu itinerario o solicitud. Respondemos rápidamente con opciones y confirmación.",
     "fullNameLabel": "Nombre completo",
     "emailLabel": "Email",
     "phoneLabel": "Teléfono / WhatsApp",
@@ -36,12 +21,85 @@
     "servicePlaceholder": "Selecciona un servicio",
     "dateFromLabel": "Fecha / Hora (Desde)",
     "dateToLabel": "Fecha / Hora (Hasta)",
-    "fromLabel": "Origen",
-    "toLabel": "Destino",
+    "fromLabel": "Desde",
+    "toLabel": "Hasta",
     "detailsLabel": "Detalles",
     "detailsPlaceholder": "Pasajeros, equipaje, preferencias, dirección de recogida, número de vuelo, plazos, etc.",
     "submitBtn": "Enviar solicitud",
     "whatsappBtn": "WhatsApp",
-    "note": "Discreción garantizada. No publicamos información del cliente."
+    "note": "Discreción garantizada. No publicamos información de clientes."
+  },
+  "services": {
+    "metaTitle": "Servicios — KS Group Concierge",
+    "kicker": "Servicios de Concierge",
+    "title": "Soporte a medida. En cualquier lugar. En cualquier momento.",
+    "subtitle": "Desde aviación privada hasta reubicación y experiencias lifestyle — coordinamos cada detalle con discreción.",
+    "ctaPrimary": "Hacer solicitud",
+    "ctaSecondary": "Cómo funciona",
+    "cards": {
+      "cta": "Solicitar este servicio",
+      "elite": {
+        "title": "Movilidad de Élite",
+        "desc": "Traslados VIP, coordinación de seguridad y rutas discretas.",
+        "li1": "Meet & assist VIP",
+        "li2": "Transporte seguro coordinado",
+        "li3": "Planificación ejecutiva"
+      },
+      "aviation": {
+        "title": "Aviación Privada",
+        "desc": "Charters, planificación de rutas y gestión en tierra.",
+        "li1": "Jets / helicópteros",
+        "li2": "Coordinación FBO",
+        "li3": "Catering y solicitudes especiales"
+      },
+      "ground": {
+        "title": "Chófer de Lujo",
+        "desc": "Vehículos premium con chófer profesional en todo el mundo.",
+        "li1": "Chófer y standby",
+        "li2": "Alquiler premium",
+        "li3": "Transporte para grupos"
+      },
+      "relocation": {
+        "title": "Reubicación y Logística",
+        "desc": "Transiciones de alto nivel entre clubes, ciudades y países.",
+        "li1": "Coordinación de mudanza",
+        "li2": "Entregas prioritarias",
+        "li3": "Soporte local"
+      },
+      "lifestyle": {
+        "title": "Lifestyle y Experiencias",
+        "desc": "Restaurantes, eventos y experiencias exclusivas.",
+        "li1": "Restaurantes y ocio",
+        "li2": "Acceso VIP",
+        "li3": "Experiencias personalizadas"
+      },
+      "corporate": {
+        "title": "Soporte Corporativo",
+        "desc": "Asistencia ejecutiva: agenda, espacios e intérpretes.",
+        "li1": "Reservas de espacios",
+        "li2": "Intérpretes y apoyo local",
+        "li3": "Coordinación de proveedores"
+      }
+    }
+  },
+  "how": {
+    "metaTitle": "Cómo funciona — KS Group Concierge",
+    "kicker": "Cómo funciona",
+    "title": "Simple, rápido y discreto.",
+    "subtitle": "Envías la solicitud, confirmamos detalles y precio, y lo ejecutamos con precisión.",
+    "steps": {
+      "s1": {
+        "title": "Enviar",
+        "desc": "Indica fechas, lugares, preferencias y urgencia."
+      },
+      "s2": {
+        "title": "Confirmar",
+        "desc": "Confirmamos disponibilidad y coste."
+      },
+      "s3": {
+        "title": "Ejecutar",
+        "desc": "Coordinamos todo hasta la finalización."
+      }
+    }
   }
 }
