@@ -412,3 +412,51 @@ footer {
     grid-template-columns: 1fr;
   }
 
+   /* styles.css — ADD THIS AT THE VERY END (services page fix) */
+
+/* Layout baseline */
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px;}
+.section{padding:56px 0;}
+.hero--compact{padding:34px 0 18px;}
+.kicker{letter-spacing:.12em;text-transform:uppercase;font-size:12px;opacity:.75;margin:0 0 10px;}
+.sub{max-width:780px;opacity:.9;line-height:1.6;margin:10px 0 0;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.14);}
+.btn--primary{background:rgba(255,255,255,.12);}
+.btn--ghost{background:transparent;}
+.btn:hover{transform:translateY(-1px);}
+
+/* Grid + Cards */
+.grid--cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+@media (max-width:980px){.grid--cards{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:640px){.grid--cards{grid-template-columns:1fr;}}
+
+.card--service{border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);backdrop-filter:blur(6px);}
+.card--service .card-body{padding:18px;}
+.card--service h3{margin:0 0 8px;font-size:18px;line-height:1.2;}
+.card--service p{margin:0 0 12px;opacity:.9;line-height:1.55;}
+.card--service .link{display:inline-block;margin-top:10px;text-decoration:none;font-weight:600;}
+.card--service .link:hover{text-decoration:underline;}
+
+/* Ticks list */
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:8px;}
+.ticks li{position:relative;padding-left:20px;opacity:.95;line-height:1.45;}
+.ticks li:before{content:"✓";position:absolute;left:0;top:0;opacity:.8;}
+
+/* Make sure hero text doesn't look “unstyled” */
+.hero h1{margin:0;font-size:42px;line-height:1.08;}
+@media (max-width:640px){.hero h1{font-size:32px;}}
+
+/* Header polish (if your header is plain) */
+.header .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;}
+.navlinks{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.navlinks a{text-decoration:none;font-weight:600;opacity:.95;}
+.navlinks a:hover{text-decoration:underline;}
+.navright{display:flex;align-items:center;gap:10px;}
+#langSelect{padding:8px 10px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.15);color:inherit;}
+
+/* Footer */
+.footer{padding:26px 0;opacity:.85;}
+.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
