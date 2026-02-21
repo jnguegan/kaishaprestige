@@ -1,5 +1,6 @@
 {
   "nav": {
+    "home": "Home",
     "services": "Services",
     "how": "How It Works",
     "request": "Request",
@@ -17,12 +18,30 @@
       "text": "Chartered jets and VIP terminals aligned with performance schedules."
     },
     "ground": {
-      "title": "Ground Mobility",
+      "title": "Luxury Chauffeur",
       "text": "Discreet luxury vehicles with professional chauffeurs worldwide."
     },
     "relocation": {
       "title": "Relocation & Logistics",
       "text": "White-glove transitions between clubs, cities, and countries."
     }
+  },
+  "request": {
+    "title": "Request Concierge",
+    "subtitle": "Share your itinerary or request. We respond quickly with options and confirmation.",
+    "fullNameLabel": "Full name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone / WhatsApp",
+    "serviceLabel": "Service",
+    "servicePlaceholder": "Select a service",
+    "dateFromLabel": "Date / Time (From)",
+    "dateToLabel": "Date / Time (To)",
+    "fromLabel": "From",
+    "toLabel": "To",
+    "detailsLabel": "Details",
+    "detailsPlaceholder": "Passengers, luggage, preferences, pickup address, flight number, deadlines, etc.",
+    "submitBtn": "Send Request",
+    "whatsappBtn": "WhatsApp Us",
+    "note": "Discretion guaranteed. We do not publish client information."
   }
 }
