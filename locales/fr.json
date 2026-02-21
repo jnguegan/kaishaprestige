@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "services": "Services",
+    "how": "Fonctionnement",
+    "request": "Demande",
+    "login": "Connexion"
+  },
+  "hero": {
+    "title": "Conçu pour la Performance d’Élite",
+    "subtitle": "Services de conciergerie de précision pour athlètes et professionnels de haut niveau.",
+    "cta": "Faire une Demande"
+  },
+  "services": {
+    "title": "Services de Mobilité de Précision",
+    "aviation": {
+      "title": "Aviation Privée",
+      "text": "Jets affrétés et terminaux VIP adaptés aux calendriers de performance."
+    },
+    "ground": {
+      "title": "Transport Terrestre",
+      "text": "Véhicules de luxe discrets avec chauffeurs professionnels."
+    },
+    "relocation": {
+      "title": "Relocalisation & Logistique",
+      "text": "Transitions haut de gamme entre clubs, villes et pays."
+    }
+  }
+}
