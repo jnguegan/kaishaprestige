@@ -1,4 +1,4 @@
-<!-- services.html (REPLACE FULL FILE) -->
+<!-- services.html — REPLACE FULL FILE (clean, consistent, premium dark layout) -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,8 +9,205 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <!-- ✅ Use the SAME stylesheet path as your working pages -->
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root{
+      --bg:#070A12;
+      --panel:rgba(255,255,255,.06);
+      --panel2:rgba(255,255,255,.04);
+      --line:rgba(255,255,255,.12);
+      --text:#EAF0FF;
+      --muted:rgba(234,240,255,.74);
+      --brand:#C9A86A;
+      --shadow:0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+      --radius2:22px;
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(900px 420px at 18% 10%, rgba(201,168,106,.18), transparent 55%),
+        radial-gradient(900px 520px at 85% 20%, rgba(84,132,255,.14), transparent 60%),
+        linear-gradient(180deg, #070A12 0%, #070A12 100%);
+      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:none}
+    img,svg{max-width:100%;height:auto}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    /* Header */
+    .header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(7,10,18,.70);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .navbar{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:14px;padding:14px 0;
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:40px;width:auto;display:block}
+    .navlinks{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .navlinks a{
+      padding:9px 10px;border-radius:12px;
+      color:var(--muted);font-weight:650;font-size:14px;
+      border:1px solid transparent;
+      transition:transform .12s ease, border-color .12s ease, background .12s ease, color .12s ease;
+      white-space:nowrap;
+    }
+    .navlinks a:hover{
+      color:var(--text);
+      border-color:rgba(255,255,255,.16);
+      background:rgba(255,255,255,.05);
+      transform:translateY(-1px);
+    }
+    .navlinks a.is-active{
+      color:var(--text);
+      border-color:rgba(201,168,106,.35);
+      background:rgba(201,168,106,.10);
+    }
+    .navright{display:flex;align-items:center;gap:10px}
+    #langSelect{
+      appearance:none;
+      padding:9px 12px;border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:650;font-size:13px;
+      outline:none;
+    }
+    .wa-icon{
+      width:40px;height:40px;
+      display:inline-flex;align-items:center;justify-content:center;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      transition:transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+    .wa-icon:hover{
+      transform:translateY(-1px);
+      border-color:rgba(201,168,106,.35);
+      background:rgba(201,168,106,.10);
+    }
+    .wa-svg{width:18px;height:18px;display:block;fill:currentColor;opacity:.95}
+
+    /* Hero */
+    .hero{padding:42px 0 18px}
+    .kicker{
+      display:inline-flex;align-items:center;gap:10px;
+      font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+      color:rgba(201,168,106,.92);
+      margin:0 0 14px;
+    }
+    .kicker:before{
+      content:"";width:28px;height:1px;background:rgba(201,168,106,.65);
+      display:inline-block;
+    }
+    h1{
+      margin:0;
+      font-size:46px;line-height:1.06;
+      letter-spacing:-.02em;
+    }
+    .sub{margin:14px 0 0;max-width:820px;color:var(--muted);font-size:16px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 14px;border-radius:14px;
+      font-weight:750;font-size:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      transition:transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+    .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}
+    .btn--primary{
+      border-color:rgba(201,168,106,.35);
+      background:rgba(201,168,106,.14);
+    }
+    .btn--primary:hover{background:rgba(201,168,106,.18);border-color:rgba(201,168,106,.50)}
+    .btn--ghost{background:transparent}
+
+    /* Sections */
+    .section{padding:22px 0 64px}
+    .grid{
+      display:grid;gap:16px;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))} h1{font-size:38px}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr} h1{font-size:32px}}
+    .card{
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
+      border-radius:var(--radius2);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .card:before{
+      content:"";
+      position:absolute;inset:0;
+      background:radial-gradient(520px 260px at 20% 0%, rgba(201,168,106,.14), transparent 55%);
+      pointer-events:none;
+      opacity:.8;
+    }
+    .card-inner{position:relative;padding:18px}
+    .card-top{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
+      margin-bottom:10px;
+    }
+    .card h3{
+      margin:0;
+      font-size:18px;line-height:1.2;
+      letter-spacing:-.01em;
+    }
+    .badge{
+      font-size:12px;font-weight:750;
+      padding:7px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(0,0,0,.18);
+      color:rgba(234,240,255,.80);
+      white-space:nowrap;
+    }
+    .card p{margin:0 0 12px;color:var(--muted);font-size:14px}
+    .ticks{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .ticks li{
+      position:relative;padding-left:22px;
+      color:rgba(234,240,255,.90);font-size:14px;
+    }
+    .ticks li:before{
+      content:"✓";
+      position:absolute;left:0;top:0;
+      color:rgba(201,168,106,.90);
+      opacity:.95;
+    }
+    .card-footer{
+      margin-top:14px;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+    }
+    .link{
+      display:inline-flex;align-items:center;gap:8px;
+      font-weight:800;font-size:14px;
+      color:rgba(201,168,106,.95);
+      padding:9px 0;
+    }
+    .link:hover{text-decoration:underline}
+    .link:after{content:"→";opacity:.9}
+
+    /* Footer */
+    .footer{
+      border-top:1px solid rgba(255,255,255,.10);
+      padding:22px 0;
+      color:var(--muted);
+    }
+    .footer-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .muted{color:var(--muted)}
+  </style>
 </head>
 
 <body>
@@ -18,17 +215,16 @@
 <header class="header">
   <div class="wrap">
     <div class="navbar">
-      <a class="brand" href="index.html" aria-label="KS Group Concierge">
-        <img src="logo.png" alt="KS Group Concierge" height="42"
-             onerror="this.onerror=null;this.src='assets/images/logo.png';" />
+      <a class="brand" href="/index.html" aria-label="KS Group Concierge">
+        <img src="/logo.png" alt="KS Group Concierge" height="42">
       </a>
 
       <nav class="navlinks" aria-label="Primary">
-        <a href="index.html" data-i18n="nav.home">Home</a>
-        <a href="services.html" data-i18n="nav.services">Services</a>
-        <a href="how-it-works.html" data-i18n="nav.how">How it works</a>
-        <a href="request.html" data-i18n="nav.request">Request</a>
-        <a href="login.html" data-i18n="nav.login">Login</a>
+        <a href="/index.html" data-i18n="nav.home">Home</a>
+        <a class="is-active" href="/services.html" data-i18n="nav.services">Services</a>
+        <a href="/how-it-works.html" data-i18n="nav.how">How it works</a>
+        <a href="/request.html" data-i18n="nav.request">Request</a>
+        <a href="/login.html" data-i18n="nav.login">Login</a>
       </nav>
 
       <div class="navright">
@@ -38,11 +234,7 @@
           <option value="es">ES</option>
         </select>
 
-        <a class="wa-icon"
-           href="https://wa.me/33783823945"
-           target="_blank"
-           rel="noopener"
-           aria-label="WhatsApp">
+        <a class="wa-icon" href="https://wa.me/33783823945" target="_blank" rel="noopener" aria-label="WhatsApp">
           <svg class="wa-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
             <path d="M19.11 17.53c-.27-.14-1.57-.77-1.82-.86-.25-.09-.43-.14-.61.14-.18.27-.7.86-.86 1.04-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.35-1.62-1.51-1.89-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.52-.45-.45-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.63 1.12 2.81.14.18 1.93 2.95 4.67 4.13.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.57-.64 1.79-1.26.22-.61.22-1.13.16-1.26-.07-.13-.25-.20-.52-.34z"/>
             <path d="M26.66 5.34C23.9 2.58 20.23 1.06 16.34 1.06 8.38 1.06 1.9 7.54 1.9 15.5c0 2.54.66 5.02 1.92 7.21L1.8 30.94l8.41-1.97c2.13 1.16 4.53 1.77 6.97 1.77h.01c7.96 0 14.44-6.48 14.44-14.44 0-3.89-1.52-7.56-4.28-10.96zM16.35 28.3h-.01c-2.21 0-4.37-.6-6.24-1.72l-.45-.27-4.99 1.17 1.33-4.86-.29-.5c-1.22-2.04-1.87-4.38-1.87-6.77 0-7.02 5.71-12.73 12.73-12.73 3.4 0 6.6 1.32 9 3.73 2.4 2.4 3.72 5.6 3.72 9 0 7.02-5.71 12.73-12.73 12.73z"/>
@@ -54,7 +246,7 @@
 </header>
 
 <main>
-  <section class="hero hero--compact">
+  <section class="hero">
     <div class="wrap">
       <p class="kicker" data-i18n="services.kicker">Concierge Services</p>
       <h1 data-i18n="services.title">Tailored support. Anywhere. Anytime.</h1>
@@ -63,94 +255,122 @@
       </p>
 
       <div class="hero-actions">
-        <a class="btn btn--primary" href="request.html" data-i18n="services.ctaPrimary">Make a request</a>
-        <a class="btn btn--ghost" href="how-it-works.html" data-i18n="services.ctaSecondary">How it works</a>
+        <a class="btn btn--primary" href="/request.html" data-i18n="services.ctaPrimary">Make a request</a>
+        <a class="btn btn--ghost" href="/how-it-works.html" data-i18n="services.ctaSecondary">How it works</a>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
-      <div class="grid grid--cards">
-
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.elite.title">Elite Mobility</h3>
+      <div class="grid">
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.elite.title">Elite Mobility</h3>
+              <span class="badge">VIP</span>
+            </div>
             <p data-i18n="services.cards.elite.desc">VIP transfers, close protection coordination, priority access and discreet routing.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.elite.li1">VIP airport meet & assist</li>
               <li data-i18n="services.cards.elite.li2">Secure transport coordination</li>
               <li data-i18n="services.cards.elite.li3">Executive itinerary planning</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.aviation.title">Private Aviation</h3>
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.aviation.title">Private Aviation</h3>
+              <span class="badge">Aviation</span>
+            </div>
             <p data-i18n="services.cards.aviation.desc">Charter sourcing, route planning, onboard preferences and ground handling.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.aviation.li1">Jet / heli charter options</li>
               <li data-i18n="services.cards.aviation.li2">FBO handling coordination</li>
               <li data-i18n="services.cards.aviation.li3">Catering & special requests</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.ground.title">Ground Mobility</h3>
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.ground.title">Ground Mobility</h3>
+              <span class="badge">Chauffeur</span>
+            </div>
             <p data-i18n="services.cards.ground.desc">Chauffeur-driven vehicles, premium rentals, multi-city logistics and standby service.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.ground.li1">Chauffeur & standby</li>
               <li data-i18n="services.cards.ground.li2">Premium vehicle rental</li>
               <li data-i18n="services.cards.ground.li3">Group transport planning</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.relocation.title">Relocation & Logistics</h3>
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.relocation.title">Relocation & Logistics</h3>
+              <span class="badge">Logistics</span>
+            </div>
             <p data-i18n="services.cards.relocation.desc">Relocation assistance, storage, moving coordination and priority deliveries.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.relocation.li1">Move & storage coordination</li>
               <li data-i18n="services.cards.relocation.li2">Deliveries & couriers</li>
               <li data-i18n="services.cards.relocation.li3">Local setup support</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.lifestyle.title">Lifestyle & Experiences</h3>
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.lifestyle.title">Lifestyle & Experiences</h3>
+              <span class="badge">Lifestyle</span>
+            </div>
             <p data-i18n="services.cards.lifestyle.desc">Dining, events, reservations, curated experiences and special occasions.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.lifestyle.li1">Restaurants & nightlife</li>
               <li data-i18n="services.cards.lifestyle.li2">Events & VIP access</li>
               <li data-i18n="services.cards.lifestyle.li3">Tailored experiences</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
 
-        <article class="card card--service">
-          <div class="card-body">
-            <h3 data-i18n="services.cards.corporate.title">Corporate Support</h3>
+        <article class="card">
+          <div class="card-inner">
+            <div class="card-top">
+              <h3 data-i18n="services.cards.corporate.title">Corporate Support</h3>
+              <span class="badge">Corporate</span>
+            </div>
             <p data-i18n="services.cards.corporate.desc">Executive assistance: travel packs, schedules, venues, interpreters and vendor coordination.</p>
             <ul class="ticks">
               <li data-i18n="services.cards.corporate.li1">Meeting & venue booking</li>
               <li data-i18n="services.cards.corporate.li2">Interpreters & local help</li>
               <li data-i18n="services.cards.corporate.li3">Vendor coordination</li>
             </ul>
-            <a class="link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
+            <div class="card-footer">
+              <a class="link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
+            </div>
           </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -160,16 +380,20 @@
   <div class="wrap">
     <div class="footer-row">
       <div class="muted">© <span id="y"></span> KS Group Concierge</div>
+      <div class="muted">
+        <a href="/services.html" data-i18n="nav.services">Services</a> ·
+        <a href="/how-it-works.html" data-i18n="nav.how">How it works</a> ·
+        <a href="/request.html" data-i18n="nav.request">Request</a>
+      </div>
     </div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
+  document.getElementById("y").textContent = new Date().getFullYear();
 </script>
 
-<!-- ✅ Use the SAME i18n loader path as your working pages -->
-<script src="i18n.js" defer></script>
+<script src="/i18n.js" defer></script>
 
 </body>
 </html>
