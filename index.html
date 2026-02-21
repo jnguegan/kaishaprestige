@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaisha Prestige</title>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="logo">
+    <img src="assets/brand/logo.png" alt="Kaisha Prestige" height="40">
+  </div>
+
+  <nav>
+    <a href="#" data-i18n="nav.services"></a>
+    <a href="#" data-i18n="nav.how"></a>
+    <a href="#" data-i18n="nav.request"></a>
+    <a href="#" data-i18n="nav.login"></a>
+
+    <select id="langSelect">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="es">ES</option>
+    </select>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <img src="assets/images/hero.jpg" class="hero-bg" alt="Private Jet Runway" />
+  <div class="hero-content">
+    <h1 data-i18n="hero.title"></h1>
+    <p data-i18n="hero.subtitle"></p>
+    <a href="#" class="btn-primary" data-i18n="hero.cta"></a>
+  </div>
+</section>
+
+<section class="services">
+  <h2 data-i18n="services.title"></h2>
+
+  <div class="service-grid">
+
+    <div class="card">
+      <img src="assets/images/jet.jpg" alt="Private Aviation" />
+      <h3 data-i18n="services.aviation.title"></h3>
+      <p data-i18n="services.aviation.text"></p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/chauffeur.jpg" alt="Ground Mobility" />
+      <h3 data-i18n="services.ground.title"></h3>
+      <p data-i18n="services.ground.text"></p>
+    </div>
+
+    <div class="card">
+      <img src="assets/images/terminal.jpg" alt="Relocation" />
+      <h3 data-i18n="services.relocation.title"></h3>
+      <p data-i18n="services.relocation.text"></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Kaisha Prestige</p>
+</footer>
+
+<script src="js/i18n.js"></script>
+</body>
+</html>
