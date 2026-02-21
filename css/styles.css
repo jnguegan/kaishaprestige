@@ -1,41 +1,80 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0A0A0C;
   color: #F2F2F2;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
+
+
+/* ===============================
+   NAVIGATION
+================================= */
 
 .nav {
   position: fixed;
+  top: 0;
   width: 100%;
-  padding: 20px 60px;
+  padding: 18px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(10,10,12,0.85);
-  backdrop-filter: blur(10px);
-  z-index: 10;
+  background: rgba(10,10,12,0.88);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+
+.nav .logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav a {
-  margin-left: 30px;
+  margin-left: 32px;
   text-decoration: none;
   color: #F2F2F2;
-  font-size: 14px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #C6A75E;
 }
 
 .nav select {
-  margin-left: 30px;
+  margin-left: 32px;
   background: transparent;
   color: #F2F2F2;
   border: 1px solid #C6A75E;
-  padding: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
+
+
+/* ===============================
+   HERO SECTION
+================================= */
 
 .hero {
   height: 100vh;
@@ -44,6 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 20px;
 }
 
 .hero-bg {
@@ -57,58 +97,157 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+  background: linear-gradient(
+    rgba(0,0,0,0.78),
+    rgba(0,0,0,0.92)
+  );
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 820px;
+  margin-top: 60px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 22px;
+  line-height: 1.1;
 }
 
 .hero p {
-  margin-bottom: 30px;
-  color: #BFC1C2;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 auto 38px auto;
+  max-width: 760px;
+  color: #E6E6E6;
 }
 
+
+/* ===============================
+   BUTTON
+================================= */
+
 .btn-primary {
-  padding: 14px 30px;
+  padding: 16px 42px;
   border: 1px solid #C6A75E;
   color: #C6A75E;
   text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+  display: inline-block;
 }
 
+.btn-primary:hover {
+  background: #C6A75E;
+  color: #0A0A0C;
+}
+
+
+/* ===============================
+   SERVICES SECTION
+================================= */
+
 .services {
-  padding: 120px 60px;
+  padding: 140px 80px;
   text-align: center;
+  background: #0A0A0C;
+}
+
+.services h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
 }
 
 .card {
   background: #141417;
-  padding-bottom: 30px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #C6A75E;
 }
 
 .card img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
 }
 
+.card h3 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.card p {
+  font-size: 15px;
+  color: #BFBFBF;
+  padding: 0 20px 30px 20px;
+  line-height: 1.6;
+}
+
+
+/* ===============================
+   FOOTER
+================================= */
+
 footer {
-  padding: 40px;
+  padding: 50px;
   text-align: center;
   background: #0A0A0C;
+  font-size: 14px;
+  color: #888;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .nav {
+    padding: 16px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .nav .logo img {
+    height: 46px;
+  }
+
+  .nav a {
+    font-size: 14px;
+    margin-left: 18px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .services {
+    padding: 100px 30px;
+  }
 }
