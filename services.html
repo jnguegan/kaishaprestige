@@ -1,15 +1,23 @@
-<!-- services.html — REPLACE FULL FILE (clean, consistent, premium dark layout) -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="services.metaTitle">Services — KS Group Concierge</title>
 
-  <link rel="icon" href="/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <!-- Favicon (same as index) -->
+  <link rel="icon" type="image/png" href="/assets/brand/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 
- <link rel="stylesheet" href="css/styles.css" />
+  <!-- Fonts (same as index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS (ROOT-RELATIVE so it works on /services and /services/) -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/services.css" />
 </head>
 
 <body>
@@ -25,7 +33,7 @@
     <a href="/request.html" data-i18n="nav.request">Request</a>
     <a href="/login.html" data-i18n="nav.login">Login</a>
 
-    <select id="langSelect">
+    <select id="langSelect" aria-label="Language">
       <option value="en">EN</option>
       <option value="fr">FR</option>
       <option value="es">ES</option>
@@ -44,121 +52,127 @@
   </nav>
 </header>
 
-<main class="wrap">
-  <section class="page-hero">
-    <p class="page-kicker" data-i18n="services.kicker">Concierge Services</p>
-    <h1 class="page-title" data-i18n="services.title">Tailored support. Anywhere. Anytime.</h1>
-    <p class="page-subtitle" data-i18n="services.subtitle">
-      From private aviation to relocation and lifestyle arrangements — we coordinate every detail with discretion.
-    </p>
+<main class="svc">
+  <section class="svc-hero">
+    <div class="svc-wrap">
+      <div class="svc-kicker" data-i18n="services.kicker">Concierge Services</div>
+      <h1 class="svc-title" data-i18n="services.title">Tailored support. Anywhere. Anytime.</h1>
+      <p class="svc-sub" data-i18n="services.subtitle">
+        From private aviation to relocation and lifestyle arrangements — we coordinate every detail with discretion.
+      </p>
 
-    <div class="page-actions">
-      <a class="btn btn-primary" href="request.html" data-i18n="services.ctaPrimary">Make a request</a>
-      <a class="btn btn-ghost" href="how-it-works.html" data-i18n="services.ctaSecondary">How it works</a>
+      <div class="svc-actions">
+        <a class="svc-btn svc-btn-primary" href="/request.html" data-i18n="services.ctaPrimary">Make a request</a>
+        <a class="svc-btn svc-btn-ghost" href="/how-it-works.html" data-i18n="services.ctaSecondary">How it works</a>
+      </div>
     </div>
   </section>
 
-  <section class="services-section">
-    <div class="services-grid">
+  <section class="svc-section">
+    <div class="svc-wrap">
+      <div class="svc-grid">
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.elite.title">Elite Mobility</h3>
-            <span class="service-badge">VIP</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.elite.title">Elite Mobility</h3>
+              <span class="svc-badge">VIP</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.elite.desc">VIP transfers, close protection coordination, priority access and discreet routing.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.elite.li1">VIP airport meet & assist</li>
+              <li data-i18n="services.cards.elite.li2">Secure transport coordination</li>
+              <li data-i18n="services.cards.elite.li3">Executive itinerary planning</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.elite.desc">VIP transfers, close protection coordination, priority access and discreet routing.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.elite.li1">VIP airport meet & assist</li>
-            <li data-i18n="services.cards.elite.li2">Secure transport coordination</li>
-            <li data-i18n="services.cards.elite.li3">Executive itinerary planning</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.aviation.title">Private Aviation</h3>
-            <span class="service-badge">Aviation</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.aviation.title">Private Aviation</h3>
+              <span class="svc-badge">Aviation</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.aviation.desc">Charter sourcing, route planning, onboard preferences and ground handling.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.aviation.li1">Jet / heli charter options</li>
+              <li data-i18n="services.cards.aviation.li2">FBO handling coordination</li>
+              <li data-i18n="services.cards.aviation.li3">Catering & special requests</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.aviation.desc">Charter sourcing, route planning, onboard preferences and ground handling.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.aviation.li1">Jet / heli charter options</li>
-            <li data-i18n="services.cards.aviation.li2">FBO handling coordination</li>
-            <li data-i18n="services.cards.aviation.li3">Catering & special requests</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.ground.title">Ground Mobility</h3>
-            <span class="service-badge">Chauffeur</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.ground.title">Ground Mobility</h3>
+              <span class="svc-badge">Chauffeur</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.ground.desc">Chauffeur-driven vehicles, premium rentals, multi-city logistics and standby service.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.ground.li1">Chauffeur & standby</li>
+              <li data-i18n="services.cards.ground.li2">Premium vehicle rental</li>
+              <li data-i18n="services.cards.ground.li3">Group transport planning</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.ground.desc">Chauffeur-driven vehicles, premium rentals, multi-city logistics and standby service.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.ground.li1">Chauffeur & standby</li>
-            <li data-i18n="services.cards.ground.li2">Premium vehicle rental</li>
-            <li data-i18n="services.cards.ground.li3">Group transport planning</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.relocation.title">Relocation & Logistics</h3>
-            <span class="service-badge">Logistics</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.relocation.title">Relocation & Logistics</h3>
+              <span class="svc-badge">Logistics</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.relocation.desc">Relocation assistance, storage, moving coordination and priority deliveries.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.relocation.li1">Move & storage coordination</li>
+              <li data-i18n="services.cards.relocation.li2">Deliveries & couriers</li>
+              <li data-i18n="services.cards.relocation.li3">Local setup support</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.relocation.desc">Relocation assistance, storage, moving coordination and priority deliveries.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.relocation.li1">Move & storage coordination</li>
-            <li data-i18n="services.cards.relocation.li2">Deliveries & couriers</li>
-            <li data-i18n="services.cards.relocation.li3">Local setup support</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.lifestyle.title">Lifestyle & Experiences</h3>
-            <span class="service-badge">Lifestyle</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.lifestyle.title">Lifestyle & Experiences</h3>
+              <span class="svc-badge">Lifestyle</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.lifestyle.desc">Dining, events, reservations, curated experiences and special occasions.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.lifestyle.li1">Restaurants & nightlife</li>
+              <li data-i18n="services.cards.lifestyle.li2">Events & VIP access</li>
+              <li data-i18n="services.cards.lifestyle.li3">Tailored experiences</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.lifestyle.desc">Dining, events, reservations, curated experiences and special occasions.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.lifestyle.li1">Restaurants & nightlife</li>
-            <li data-i18n="services.cards.lifestyle.li2">Events & VIP access</li>
-            <li data-i18n="services.cards.lifestyle.li3">Tailored experiences</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="service-card">
-        <div class="service-card-inner">
-          <div class="service-card-top">
-            <h3 data-i18n="services.cards.corporate.title">Corporate Support</h3>
-            <span class="service-badge">Corporate</span>
+        <article class="svc-card">
+          <div class="svc-card-inner">
+            <div class="svc-card-top">
+              <h3 data-i18n="services.cards.corporate.title">Corporate Support</h3>
+              <span class="svc-badge">Corporate</span>
+            </div>
+            <p class="svc-desc" data-i18n="services.cards.corporate.desc">Executive assistance: travel packs, schedules, venues, interpreters and vendor coordination.</p>
+            <ul class="svc-list">
+              <li data-i18n="services.cards.corporate.li1">Meeting & venue booking</li>
+              <li data-i18n="services.cards.corporate.li2">Interpreters & local help</li>
+              <li data-i18n="services.cards.corporate.li3">Vendor coordination</li>
+            </ul>
+            <a class="svc-link" href="/request.html" data-i18n="services.cards.cta">Request this service</a>
           </div>
-          <p class="service-desc" data-i18n="services.cards.corporate.desc">Executive assistance: travel packs, schedules, venues, interpreters and vendor coordination.</p>
-          <ul class="service-ticks">
-            <li data-i18n="services.cards.corporate.li1">Meeting & venue booking</li>
-            <li data-i18n="services.cards.corporate.li2">Interpreters & local help</li>
-            <li data-i18n="services.cards.corporate.li3">Vendor coordination</li>
-          </ul>
-          <a class="service-link" href="request.html" data-i18n="services.cards.cta">Request this service</a>
-        </div>
-      </article>
+        </article>
 
+      </div>
     </div>
   </section>
 </main>
 
-<script src="i18n.js"></script>
+<script src="/i18n.js"></script>
+</body>
+</html>
