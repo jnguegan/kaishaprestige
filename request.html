@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Concierge | KS Group Concierge</title>
+
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="nav">
+  <a href="index.html" class="logo">
+    <img src="assets/brand/logo-main.png" alt="KS Group Concierge" height="60">
+  </a>
+
+  <nav>
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="request.html" data-i18n="nav.request">Request</a>
+    <a href="#" data-i18n="nav.login">Login</a>
+
+    <select id="langSelect">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="es">ES</option>
+    </select>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1 data-i18n="request.title">Request Concierge</h1>
+      <p data-i18n="request.subtitle">
+        Share your itinerary or request. We respond quickly with options and confirmation.
+      </p>
+    </div>
+  </section>
+
+  <section class="form-wrap">
+    <form class="request-form" name="concierge-request" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="concierge-request" />
+
+      <div class="grid-2">
+        <div class="field">
+          <label data-i18n="request.fullNameLabel">Full name</label>
+          <input name="full_name" type="text" required placeholder="John Doe" />
+        </div>
+
+        <div class="field">
+          <label data-i18n="request.emailLabel">Email</label>
+          <input name="email" type="email" required placeholder="name@email.com" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label data-i18n="request.phoneLabel">Phone / WhatsApp</label>
+          <input name="phone" type="tel" placeholder="+34 6xx xxx xxx" />
+        </div>
+
+        <div class="field">
+          <label data-i18n="request.serviceLabel">Service</label>
+          <select name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option value="private_aviation">Private Aviation</option>
+            <option value="chauffeur">Luxury Chauffeur</option>
+            <option value="relocation">Relocation & Logistics</option>
+            <option value="yacht">Yacht Charter</option>
+            <option value="security">Security Escort</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label data-i18n="request.dateFromLabel">Date / Time (From)</label>
+          <input name="date_from" type="datetime-local" />
+        </div>
+
+        <div class="field">
+          <label data-i18n="request.dateToLabel">Date / Time (To)</label>
+          <input name="date_to" type="datetime-local" />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label data-i18n="request.fromLabel">From</label>
+          <input name="from" type="text" placeholder="London" />
+        </div>
+
+        <div class="field">
+          <label data-i18n="request.toLabel">To</label>
+          <input name="to" type="text" placeholder="Madrid" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label data-i18n="request.detailsLabel">Details</label>
+        <textarea name="details" rows="6" required
+          placeholder="Passengers, luggage, preferences, pickup address, flight number, deadlines, etc."></textarea>
+      </div>
+
+      <div class="actions">
+        <button class="btn-solid" type="submit" data-i18n="request.submitBtn">Send Request</button>
+
+        <!-- WhatsApp fallback -->
+        <a class="btn-outline" id="whatsappRequestLink" href="#" target="_blank" rel="noopener"
+           data-i18n="request.whatsappBtn">WhatsApp Us</a>
+      </div>
+
+      <p class="small-note" data-i18n="request.note">
+        Discretion guaranteed. We do not publish client information.
+      </p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 KS Group Concierge</p>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>
+  // Update this number to your business WhatsApp (international format, no spaces)
+  const WHATSAPP_NUMBER = "34600000000"; // <-- CHANGE ME
+
+  const link = document.getElementById("whatsappRequestLink");
+  if (link) {
+    const msg = "Hello KS Group Concierge. I would like to request concierge services.";
+    link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+  }
+</script>
+</body>
+</html>
