@@ -74,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-/* WhatsApp icon in nav (GLOBAL — not mobile only) */
+/* WhatsApp icon in nav (INLINE SVG) */
 .wa-icon {
   display: inline-flex;
   align-items: center;
@@ -95,12 +95,17 @@ body {
   border-color: #C6A75E;
 }
 
-.wa-icon img {
+/* IMPORTANT: this makes the SVG visible */
+.wa-svg {
   width: 18px;
   height: 18px;
   display: block;
+  fill: currentColor;
 }
 
+/* Remove/DELETE this if it exists:
+.wa-icon img { ... }
+*/
 
 /* ===============================
    HERO SECTION
