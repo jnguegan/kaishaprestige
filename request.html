@@ -43,7 +43,11 @@
   </section>
 
   <section class="form-wrap">
-    <form class="request-form" name="concierge-request" method="POST" data-netlify="true">
+    <form id="requestForm"
+      class="request-form"
+      name="concierge-request"
+      method="POST"
+      data-netlify="true">
       <input type="hidden" name="form-name" value="concierge-request" />
 
       <div class="grid-2">
@@ -122,21 +126,64 @@
     </form>
   </section>
 </main>
-
 <footer>
   <p>© 2026 KS Group Concierge</p>
 </footer>
 
 <script src="js/i18n.js"></script>
-<script>
-  // Update this number to your business WhatsApp (international format, no spaces)
-  const WHATSAPP_NUMBER = "33783823945"; // <-- CHANGE ME
 
-  const link = document.getElementById("whatsappRequestLink");
-  if (link) {
-    const msg = "Hello KS Group Concierge. I would like to request concierge services.";
-    link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+<script>
+  const WA_NUMBER = "33783823945";
+
+  function val(selector) {
+    const el = document.querySelector(selector);
+    return el ? (el.value || "").trim() : "";
   }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const waBtn = document.getElementById("whatsappFromForm");
+    if (!waBtn) return;
+
+    waBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const fullName = val("input[name='full_name']");
+      const email = val("input[name='email']");
+      const phone = val("input[name='phone']");
+      const service = val("select[name='service']");
+      const dateFrom = val("input[name='date_from']");
+      const dateTo = val("input[name='date_to']");
+      const from = val("input[name='from']");
+      const to = val("input[name='to']");
+      const details = val("textarea[name='details']");
+
+      const msg =
+`Hello KS Group Concierge,
+
+I would like to arrange concierge support with the following details:
+
+• Name: ${fullName || "-"}
+• Email: ${email || "-"}
+• Phone / WhatsApp: ${phone || "-"}
+
+• Service: ${service || "-"}
+• Date/Time (From): ${dateFrom || "-"}
+• Date/Time (To): ${dateTo || "-"}
+• From: ${from || "-"}
+• To: ${to || "-"}
+
+• Additional details:
+${details || "-"}
+
+Please confirm availability and next steps.
+
+Thank you.`;
+
+      const url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank", "noopener");
+    });
+  });
 </script>
+
 </body>
 </html>
