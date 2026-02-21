@@ -98,6 +98,7 @@
 </footer>
 
 <script src="js/i18n.js"></script><script>
+ <script>
   (function () {
     const WA_NUMBER = "33783823945";
 
@@ -143,35 +144,29 @@ Por favor, confirme disponibilidad y próximos pasos.
 Gracias.`
     };
 
-    // IMPORTANT: match the key your i18n.js uses. Most of your sites used "pap_lang".
-    const LANG_STORAGE_KEY = "pap_lang";
+    // set this to whatever your i18n stores; if your other pages work, this is likely correct
+    const LANG_KEY = "pap_lang";
 
     function getLang() {
       const sel = document.getElementById("langSelect");
-      const fromSelect = sel && sel.value ? sel.value : "";
-      const fromStorage = localStorage.getItem(LANG_STORAGE_KEY) || "";
-      return (fromSelect || fromStorage || "en").toLowerCase();
+      const v = (sel && sel.value) || localStorage.getItem(LANG_KEY) || "en";
+      return String(v).toLowerCase();
     }
 
-    function updateNavWhatsAppHref() {
-      const waLink = document.querySelector("a.wa-icon");
-      if (!waLink) return;
+    function updateWhatsAppHref() {
+      const a = document.querySelector("a.wa-icon");
+      if (!a) return;
 
       const lang = getLang();
       const msg = WA_TEXT[lang] || WA_TEXT.en;
-      waLink.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+      a.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-      updateNavWhatsAppHref();
+      updateWhatsAppHref();
 
       const sel = document.getElementById("langSelect");
-      if (sel) sel.addEventListener("change", updateNavWhatsAppHref);
-
-      // If your i18n changes localStorage, this catches it too (helpful when switching pages)
-      window.addEventListener("storage", (e) => {
-        if (!e.key || e.key === LANG_STORAGE_KEY) updateNavWhatsAppHref();
-      });
+      if (sel) sel.addEventListener("change", updateWhatsAppHref);
     });
   })();
 </script>
