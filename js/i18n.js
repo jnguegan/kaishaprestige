@@ -1,4 +1,4 @@
-// kaishaprestige/js/i18n.js
+// /js/i18n.js
 // Improved, resilient i18n loader with:
 // - EN fallback on fetch/parse errors
 // - EN fallback for missing keys
@@ -10,6 +10,11 @@
   const STORAGE_KEY = "kp_lang";
   const DEFAULT_LANG = "en";
   const SUPPORTED = ["en", "fr", "es"];
+
+  // IMPORTANT:
+  // Use an ABSOLUTE path so it works on /, /services, /how-it-works, /request, etc.
+  // Relative paths like "locales/en.json" break when the page URL is not "/".
+  const LOCALES_BASE = "/locales/";
 
   let cache = {}; // { lang: translations }
   let enCache = null;
@@ -41,7 +46,7 @@
     const l = normalizeLang(lang);
     if (cache[l]) return cache[l];
 
-    const url = `locales/${l}.json`;
+    const url = `${LOCALES_BASE}${l}.json`;
 
     try {
       const data = await fetchJson(url);
