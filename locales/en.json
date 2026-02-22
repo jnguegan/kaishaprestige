@@ -120,5 +120,59 @@
         "desc": "We coordinate end-to-end and share updates until completion."
       }
     }
+  },
+  "services": {
+    "metaTitle": "Services — KS Group Concierge",
+    "kicker": "Concierge Services",
+    "title": "Tailored support. Anywhere. Anytime.",
+    "subtitle": "From private aviation to relocation and lifestyle arrangements — we coordinate every detail with discretion.",
+    "ctaPrimary": "Make a request",
+    "ctaSecondary": "How it works",
+    "cards": {
+      "cta": "Request this service",
+      "elite": {
+        "title": "Elite Mobility",
+        "desc": "VIP transfers, close protection coordination, priority access and discreet routing.",
+        "li1": "VIP airport meet & assist",
+        "li2": "Secure transport coordination",
+        "li3": "Executive itinerary planning"
+      },
+      "aviation": {
+        "title": "Private Aviation",
+        "desc": "Charter sourcing, route planning, onboard preferences and ground handling.",
+        "li1": "Jet / heli charter options",
+        "li2": "FBO handling coordination",
+        "li3": "Catering & special requests"
+      },
+      "ground": {
+        "title": "Ground Mobility",
+        "desc": "Chauffeur-driven vehicles, premium rentals, multi-city logistics and standby service.",
+        "li1": "Chauffeur & standby",
+        "li2": "Premium vehicle rental",
+        "li3": "Group transport planning"
+      },
+      "relocation": {
+        "title": "Relocation & Logistics",
+        "desc": "Relocation assistance, storage, moving coordination and priority deliveries.",
+        "li1": "Move & storage coordination",
+        "li2": "Deliveries & couriers",
+        "li3": "Local setup support"
+      },
+      "lifestyle": {
+        "title": "Lifestyle & Experiences",
+        "desc": "Dining, events, reservations, curated experiences and special occasions.",
+        "li1": "Restaurants & nightlife",
+        "li2": "Events & VIP access",
+        "li3": "Tailored experiences"
+      },
+      "corporate": {
+        "title": "Corporate Support",
+        "desc": "Executive assistance: travel packs, schedules, venues, interpreters and vendor coordination.",
+        "li1": "Meeting & venue booking",
+        "li2": "Interpreters & local help",
+        "li3": "Vendor coordination"
+      }
+    }
   }
 }
+
