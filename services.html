@@ -39,9 +39,12 @@
       <option value="es">ES</option>
     </select>
 
-    <a class="wa-icon"
-   id="whatsappHeader"
+<a class="wa-icon"
+   data-wa="header"
    href="#"
+   target="_blank"
+   rel="noopener"
+   aria-label="WhatsApp">
        target="_blank"
        rel="noopener"
        aria-label="WhatsApp">
@@ -175,46 +178,7 @@
 </main>
 
 <script src="js/i18n.js"></script>
-  <script>
-(function () {
-  const WA_NUMBER = "33783823945";
-
-  function getLang() {
-    const sel = document.getElementById("langSelect");
-    const stored =
-      localStorage.getItem("pap_lang") ||
-      localStorage.getItem("lang") ||
-      localStorage.getItem("ks_lang");
-    return (sel && sel.value) || stored || "en";
-  }
-
-  function buildHeaderMessage(lang) {
-    if (lang === "fr") {
-      return "Bonjour KS Group Concierge,\n\nJe souhaite obtenir plus d'informations sur vos services.";
-    }
-    if (lang === "es") {
-      return "Hola KS Group Concierge,\n\nMe gustaría obtener más información sobre sus servicios.";
-    }
-    return "Hello KS Group Concierge,\n\nI would like more information about your services.";
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const waBtn = document.getElementById("whatsappHeader");
-    if (!waBtn) return;
-
-    waBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const lang = getLang();
-      const msg = buildHeaderMessage(lang);
-      const url =
-        "https://wa.me/" +
-        WA_NUMBER +
-        "?text=" +
-        encodeURIComponent(msg);
-      window.open(url, "_blank", "noopener");
-    });
-  });
-})();
-</script>
-</body>
+<script src="/js/whatsapp.js"></script>
+  
+ </body>
 </html>
