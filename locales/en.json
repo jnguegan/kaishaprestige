@@ -98,5 +98,27 @@
       "cta": "Make a request",
       "wa": "WhatsApp us"
     }
+  },
+
+  "how": {
+    "metaTitle": "How it works — KS Group Concierge",
+    "kicker": "How it works",
+    "title": "Simple, fast, discreet.",
+    "subtitle": "Submit your request, we confirm details and pricing, then we execute with precision.",
+
+    "steps": {
+      "s1": {
+        "title": "Submit",
+        "desc": "Tell us what you need: dates, locations, preferences, budget and urgency."
+      },
+      "s2": {
+        "title": "Confirm",
+        "desc": "We clarify details, confirm availability, and send a clear plan and cost."
+      },
+      "s3": {
+        "title": "Deliver",
+        "desc": "We coordinate end-to-end and share updates until completion."
+      }
+    }
   }
 }
