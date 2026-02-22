@@ -154,5 +154,46 @@
         "li3": "Coordination de prestataires"
       }
     }
+  },
+  "how": {
+  "metaTitle": "Comment ça marche — KS Group Concierge",
+  "kicker": "Comment ça marche",
+  "title": "Simple, rapide, discret.",
+  "subtitle": "Soumettez votre demande, nous confirmons les détails et le prix, puis nous exécutons avec précision.",
+  "ctaPrimary": "Faire une demande",
+  "ctaSecondary": "Écrivez-nous sur WhatsApp",
+  "steps": {
+    "s1": { "title": "Soumettre", "desc": "Dites-nous ce dont vous avez besoin : dates, lieux, préférences, budget et urgence." },
+    "s2": { "title": "Confirmer", "desc": "Nous précisons les détails, confirmons la disponibilité et envoyons un plan clair et le coût." },
+    "s3": { "title": "Exécuter", "desc": "Nous coordonnons de bout en bout et partageons des mises à jour jusqu’à finalisation." }
+  },
+  "rules": {
+    "title": "Principes de service",
+    "li1": "Discrétion & confidentialité",
+    "li2": "Rapidité et précision",
+    "li3": "Partenaires premium uniquement",
+    "li4": "Communication claire"
+  },
+  "sla": {
+    "title": "Délai de réponse habituel",
+    "desc": "Nous répondons généralement en quelques heures. Pour l’urgence, WhatsApp est le plus rapide.",
+    "p1": "Standard : le jour même",
+    "p2": "Urgent : prioritaire",
+    "p3": "Complexe : 24–48h"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "Travaillez-vous à l’international ?",
+    "a1": "Oui. Nous coordonnons dans les grandes villes et destinations, selon disponibilité.",
+    "q2": "Comment gérez-vous les paiements ?",
+    "a2": "Nous confirmons le prix avant exécution. Les moyens de paiement dépendent du service et du prestataire.",
+    "q3": "Mes informations sont-elles confidentielles ?",
+    "a3": "Toujours. Nous ne partageons que l’essentiel avec des partenaires sélectionnés pour traiter votre demande."
+  },
+  "band": {
+    "title": "Faites votre prochaine demande maintenant.",
+    "desc": "Cela prend moins d’une minute pour commencer.",
+    "cta": "Faire une demande",
+    "services": "Voir les services"
   }
 }
