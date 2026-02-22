@@ -10,13 +10,27 @@
   padding: 0 18px;
 }
 
-.svc-hero{ padding: 64px 0 24px; text-align:center; }
-.svc-kicker{
-  font-size: 12px;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  opacity: .85;
-  margin: 0 0 12px;
+.svc-hero {
+  position: relative;
+  padding: 120px 0 90px;
+  text-align: center;
+  background: url("/assets/images/services-hero.jpg") center center / cover no-repeat;
+}
+
+.svc-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.65)
+  );
+}
+
+.svc-wrap {
+  position: relative;
+  z-index: 2;
 }
 .svc-title{
   margin: 0;
