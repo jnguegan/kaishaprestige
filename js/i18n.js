@@ -1,5 +1,6 @@
 // /js/i18n.js
-// Improved, resilient i18n loader with:
+// Resilient i18n loader with:
+// - Auto-detect of locales base path (fixes 404 path issues)
 // - EN fallback on fetch/parse errors
 // - EN fallback for missing keys
 // - optional HTML translations via data-i18n-html
@@ -11,13 +12,9 @@
   const DEFAULT_LANG = "en";
   const SUPPORTED = ["en", "fr", "es"];
 
-  // IMPORTANT:
-  // Use an ABSOLUTE path so it works on /, /services, /how-it-works, /request, etc.
-  // Relative paths like "locales/en.json" break when the page URL is not "/".
-  const LOCALES_BASE = "/locales/";
-
-  let cache = {}; // { lang: translations }
+  let cache = {};      // { lang: translations }
   let enCache = null;
+  let LOCALES_BASE = null; // resolved at runtime
 
   const isDebug = () => Boolean(window.I18N_DEBUG);
 
@@ -31,7 +28,6 @@
 
   function normalizeLang(lang) {
     const l = String(lang || "").toLowerCase().trim();
-    // Accept 'en-GB', 'fr-FR' style inputs
     const base = l.split("-")[0];
     return SUPPORTED.includes(base) ? base : DEFAULT_LANG;
   }
@@ -42,19 +38,49 @@
     return await res.json();
   }
 
+  // Auto-detect where your JSON files actually live in production
+  async function resolveLocalesBase() {
+    if (LOCALES_BASE) return LOCALES_BASE;
+
+    const candidates = [
+      "/locales/",                 // most common
+      "/ksgroupconcierge/locales/" // matches your deploy file browser path
+    ];
+
+    for (const base of candidates) {
+      try {
+        const testUrl = `${base}en.json`;
+        const res = await fetch(testUrl, { cache: "no-cache" });
+        if (res.ok) {
+          LOCALES_BASE = base;
+          safeLog("Resolved LOCALES_BASE =", LOCALES_BASE);
+          return LOCALES_BASE;
+        }
+      } catch (e) {
+        // keep trying
+      }
+    }
+
+    // If nothing matched, default to /locales/ (will still fail loudly in debug)
+    LOCALES_BASE = "/locales/";
+    safeWarn("Could not resolve locales base. Defaulting to", LOCALES_BASE);
+    return LOCALES_BASE;
+  }
+
   async function loadLang(lang) {
     const l = normalizeLang(lang);
     if (cache[l]) return cache[l];
 
-    const url = `${LOCALES_BASE}${l}.json`;
+    const base = await resolveLocalesBase();
+    const url = `${base}${l}.json`;
 
     try {
       const data = await fetchJson(url);
       cache[l] = data;
-      safeLog(`Loaded ${l} translations`);
+      safeLog(`Loaded ${l} translations from ${url}`);
       return data;
     } catch (err) {
-      safeWarn(`Failed loading ${l}:`, err);
+      safeWarn(`Failed loading ${l} from ${url}:`, err);
       return null;
     }
   }
@@ -64,11 +90,8 @@
     const parts = String(path).split(".").filter(Boolean);
     let cur = obj;
     for (const p of parts) {
-      if (cur && Object.prototype.hasOwnProperty.call(cur, p)) {
-        cur = cur[p];
-      } else {
-        return undefined;
-      }
+      if (cur && Object.prototype.hasOwnProperty.call(cur, p)) cur = cur[p];
+      else return undefined;
     }
     return cur;
   }
@@ -85,13 +108,11 @@
 
     const apply = (el, key, allowHtml) => {
       const v = getByPath(active, key);
-
       if (v !== undefined) {
         setElText(el, v, allowHtml);
         return;
       }
 
-      // fallback to EN
       const enV = getByPath(enCache, key);
       if (enV !== undefined) {
         setElText(el, enV, allowHtml);
@@ -99,7 +120,7 @@
         return;
       }
 
-      // fallback to showing key (debug friendly)
+      // Keep it readable if missing everywhere
       setElText(el, key, false);
       safeWarn(`Missing key in ${lang} and EN: ${key}`);
     };
@@ -107,7 +128,6 @@
     textNodes.forEach(el => apply(el, el.getAttribute("data-i18n"), false));
     htmlNodes.forEach(el => apply(el, el.getAttribute("data-i18n-html"), true));
 
-    // Optional: set <html lang="..">
     document.documentElement.setAttribute("lang", lang);
   }
 
@@ -127,7 +147,6 @@
     const l = normalizeLang(lang);
     saveLang(l);
 
-    // Ensure EN is loaded as a fallback
     if (!enCache) {
       enCache = (await loadLang("en")) || {};
     }
@@ -145,7 +164,6 @@
     const sel = getSelectEl();
     if (!sel) return;
 
-    // Ensure options are present (if user used a custom select)
     if (sel.tagName === "SELECT" && sel.options && sel.options.length === 0) {
       SUPPORTED.forEach(code => {
         const opt = document.createElement("option");
@@ -161,15 +179,11 @@
   document.addEventListener("DOMContentLoaded", async () => {
     bindSelect();
 
-    // If no saved language, try browser language first
     const browserLang = normalizeLang(navigator.language || navigator.userLanguage || DEFAULT_LANG);
-    const initial = localStorage.getItem(STORAGE_KEY)
-      ? getSavedLang()
-      : browserLang;
+    const initial = localStorage.getItem(STORAGE_KEY) ? getSavedLang() : browserLang;
 
     await setLanguage(initial);
   });
 
-  // Expose for debugging/manual switching in console: i18nSetLang('fr')
   window.i18nSetLang = setLanguage;
 })();
