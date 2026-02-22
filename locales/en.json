@@ -174,15 +174,7 @@
       }
     }
  },
-      "corporate": {
-        "title": "Corporate Support",
-        "desc": "Executive assistance: travel packs, schedules, venues, interpreters and vendor coordination.",
-        "li1": "Meeting & venue booking",
-        "li2": "Interpreters & local help",
-        "li3": "Vendor coordination"
-      }
-    }
-  },
+    
   "how": {
     "metaTitle": "How it works — KS Group Concierge",
     "kicker": "How it works",
