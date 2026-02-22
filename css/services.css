@@ -52,8 +52,17 @@
 }
 .svc-btn:hover{ transform: translateY(-1px); }
 .svc-btn-primary{
-  border-color: rgba(201,168,106,.40);
-  background: rgba(201,168,106,.14);
+  border:1px solid rgba(201,168,106,.6);
+  background:linear-gradient(135deg, rgba(201,168,106,.25), rgba(201,168,106,.15));
+  color:#d6b46a;
+  font-weight:600;
+  transition:all .25s ease;
+}
+
+.svc-btn-primary:hover{
+  background:linear-gradient(135deg, rgba(201,168,106,.35), rgba(201,168,106,.25));
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(201,168,106,.2);
 }
 .svc-btn-ghost{ background: transparent; }
 
@@ -145,6 +154,15 @@
   margin-top: 12px;
   font-weight: 600;
   text-decoration: none;
+  color: #d6b46a; /* GOLD */
+  transition: all .2s ease;
 }
-.svc-link:hover{ text-decoration: underline; }
-.svc-link:after{ content:"→"; opacity:.85; }
+
+.svc-link:hover{
+  opacity: .8;
+}
+
+.svc-link:after{
+  content:"→";
+  opacity:.85;
+}
