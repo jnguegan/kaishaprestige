@@ -643,3 +643,35 @@ header.nav > nav{
 .service-link:hover{ text-decoration: underline; }
 .service-link:after{ content:"→"; opacity:.85; }
    
+/* ===== GOLD CTA SYSTEM ===== */
+
+.btn-gold{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 24px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid rgba(201,168,106,.6);
+  background:linear-gradient(135deg, rgba(201,168,106,.25), rgba(201,168,106,.15));
+  color:#d6b46a;
+  transition:all .25s ease;
+}
+
+.btn-gold:hover{
+  background:linear-gradient(135deg, rgba(201,168,106,.35), rgba(201,168,106,.25));
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(201,168,106,.2);
+}
+
+.link-gold{
+  color:#d6b46a;
+  text-decoration:none;
+  font-weight:500;
+  transition:all .2s ease;
+}
+
+.link-gold:hover{
+  opacity:.8;
+}
