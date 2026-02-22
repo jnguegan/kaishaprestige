@@ -101,5 +101,58 @@
         "desc": "Nous coordonnons de bout en bout jusqu’à finalisation."
       }
     }
+  },
+    "services": {
+    "metaTitle": "Services — KS Group Concierge",
+    "kicker": "Services de conciergerie",
+    "title": "Un accompagnement sur mesure. Partout. À tout moment.",
+    "subtitle": "De l’aviation privée à la relocalisation et aux prestations lifestyle — nous coordonnons chaque détail avec discrétion.",
+    "ctaPrimary": "Faire une demande",
+    "ctaSecondary": "Comment ça marche",
+    "cards": {
+      "cta": "Demander ce service",
+      "elite": {
+        "title": "Mobilité d’élite",
+        "desc": "Transferts VIP, coordination de protection rapprochée, accès prioritaire et itinéraires discrets.",
+        "li1": "Accueil VIP à l’aéroport (meet & assist)",
+        "li2": "Coordination de transport sécurisé",
+        "li3": "Planification d’itinéraire exécutif"
+      },
+      "aviation": {
+        "title": "Aviation privée",
+        "desc": "Recherche de charter, planification d’itinéraire, préférences à bord et assistance au sol.",
+        "li1": "Options jet / hélicoptère",
+        "li2": "Coordination FBO (aviation d’affaires)",
+        "li3": "Catering & demandes spéciales"
+      },
+      "ground": {
+        "title": "Mobilité terrestre",
+        "desc": "Véhicules avec chauffeur, locations premium, logistique multi-villes et service en attente.",
+        "li1": "Chauffeur & mise à disposition",
+        "li2": "Location de véhicule premium",
+        "li3": "Organisation de transport de groupe"
+      },
+      "relocation": {
+        "title": "Relocalisation & logistique",
+        "desc": "Aide à la relocalisation, stockage, coordination de déménagement et livraisons prioritaires.",
+        "li1": "Coordination déménagement & stockage",
+        "li2": "Livraisons & coursiers",
+        "li3": "Assistance à l’installation locale"
+      },
+      "lifestyle": {
+        "title": "Lifestyle & expériences",
+        "desc": "Restaurants, événements, réservations, expériences sur mesure et occasions spéciales.",
+        "li1": "Restaurants & vie nocturne",
+        "li2": "Événements & accès VIP",
+        "li3": "Expériences sur mesure"
+      },
+      "corporate": {
+        "title": "Support corporate",
+        "desc": "Assistance exécutive : packs de voyage, agendas, lieux, interprètes et coordination de prestataires.",
+        "li1": "Réservation de réunions & lieux",
+        "li2": "Interprètes & assistance locale",
+        "li3": "Coordination de prestataires"
+      }
+    }
   }
 }
