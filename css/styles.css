@@ -107,7 +107,6 @@ body {
 .wa-icon img { ... }
 */
 
-
 /* ===============================
    HERO SECTION
 ================================= */
@@ -412,14 +411,8 @@ footer {
   .grid-2 {
     grid-template-columns: 1fr;
   }
-} /* ✅ IMPORTANT: CLOSES THE @media (max-width: 900px) BLOCK */
 
-
-/* ==========================================================
-   (Below are your existing added blocks — kept as-is)
-   NOTE: Now they are OUTSIDE the media query, so they apply
-   correctly on desktop too.
-========================================================== */
+   /* styles.css — ADD THIS AT THE VERY END (services page fix) */
 
 /* Layout baseline */
 .wrap{max-width:1120px;margin:0 auto;padding:0 18px;}
@@ -429,7 +422,7 @@ footer {
 .sub{max-width:780px;opacity:.9;line-height:1.6;margin:10px 0 0;}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;}
 
-/* Buttons (BEM style used by How page) */
+/* Buttons */
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.14);}
 .btn--primary{background:rgba(255,255,255,.12);}
 .btn--ghost{background:transparent;}
@@ -455,6 +448,14 @@ footer {
 /* Make sure hero text doesn't look “unstyled” */
 .hero h1{margin:0;font-size:42px;line-height:1.08;}
 @media (max-width:640px){.hero h1{font-size:32px;}}
+
+/* Header polish (if your header is plain) */
+.header .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;}
+.navlinks{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+.navlinks a{text-decoration:none;font-weight:600;opacity:.95;}
+.navlinks a:hover{text-decoration:underline;}
+.navright{display:flex;align-items:center;gap:10px;}
+#langSelect{padding:8px 10px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.15);color:inherit;}
 
 /* Footer */
 .footer{padding:26px 0;opacity:.85;}
@@ -491,7 +492,7 @@ header.nav > nav{
   header.nav > nav{ flex-wrap:nowrap; }
 }
 
-/* ===========================
+   /* ===========================
    SERVICES PAGE (shared styles)
    =========================== */
 
@@ -527,6 +528,27 @@ header.nav > nav{
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 18px;
+}
+
+/* Buttons (only if not already in your CSS) */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  text-decoration: none;
+}
+.btn:hover{ transform: translateY(-1px); }
+.btn-primary{
+  border-color: rgba(201,168,106,.40);
+  background: rgba(201,168,106,.14);
+}
+.btn-ghost{
+  background: transparent;
 }
 
 /* Services grid/cards */
@@ -620,7 +642,7 @@ header.nav > nav{
 }
 .service-link:hover{ text-decoration: underline; }
 .service-link:after{ content:"→"; opacity:.85; }
-
+   
 /* ===== GOLD CTA SYSTEM ===== */
 
 .btn-gold{
@@ -652,33 +674,4 @@ header.nav > nav{
 
 .link-gold:hover{
   opacity:.8;
-}
-
-/* ==========================================================
-   Compatibility: Make btn--primary / btn--ghost match gold system
-   This prevents "blue underline" CTAs on How page without changing HTML
-========================================================== */
-
-.btn.btn--primary{
-  border:1px solid rgba(201,168,106,.6);
-  background:linear-gradient(135deg, rgba(201,168,106,.25), rgba(201,168,106,.15));
-  color:#d6b46a;
-  text-decoration:none;
-}
-
-.btn.btn--ghost{
-  border:1px solid rgba(201,168,106,.85);
-  background:transparent;
-  color:#C6A75E;
-  text-decoration:none;
-}
-
-.btn.btn--primary:hover{
-  background:linear-gradient(135deg, rgba(201,168,106,.35), rgba(201,168,106,.25));
-  transform:translateY(-2px);
-  box-shadow:0 8px 24px rgba(201,168,106,.2);
-}
-
-.btn.btn--ghost:hover{
-  background: rgba(198,167,94,0.12);
 }
