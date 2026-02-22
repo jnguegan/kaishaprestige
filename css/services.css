@@ -64,7 +64,24 @@
   transform:translateY(-2px);
   box-shadow:0 8px 24px rgba(201,168,106,.2);
 }
-.svc-btn-ghost{ background: transparent; }
+.svc-btn-ghost{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 22px;
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,.25);
+  background:transparent;
+  color:white;                 /* FORCE WHITE */
+  text-decoration:none;        /* REMOVE BLUE LINK STYLE */
+  font-weight:500;
+  transition:all .2s ease;
+}
+
+.svc-btn-ghost:hover{
+  border-color:#d6b46a;
+  color:#d6b46a;
+}
 
 .svc-section{ padding: 26px 0 70px; }
 
