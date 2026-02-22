@@ -1,0 +1,181 @@
+/* /css/how.css — How It Works page styles (keeps global theme in /css/styles.css) */
+
+.how { padding-bottom: 40px; }
+
+.how-hero {
+  padding: 64px 0 34px;
+}
+
+.how-wrap {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.how-kicker {
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: .78;
+  margin-bottom: 10px;
+}
+
+.how-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.05;
+  margin: 0 0 12px;
+}
+
+.how-sub {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: .88;
+  max-width: 760px;
+  margin: 0 0 18px;
+}
+
+.how-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.how-section { padding: 24px 0; }
+
+.how-steps {
+  display: grid;
+  gap: 14px;
+  margin: 18px 0 28px;
+}
+
+.how-step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+}
+
+.how-step-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.12);
+  font-weight: 600;
+  opacity: .92;
+}
+
+.how-step-body h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.how-step-body p {
+  margin: 0;
+  opacity: .86;
+  line-height: 1.7;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 26px;
+}
+
+@media (max-width: 900px) {
+  .how-grid { grid-template-columns: 1fr; }
+}
+
+.how-card {
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.03);
+}
+
+.how-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.how-ticks {
+  margin: 0;
+  padding-left: 18px;
+  opacity: .9;
+  line-height: 1.8;
+}
+
+.how-muted { opacity: .85; line-height: 1.7; margin: 0 0 12px; }
+
+.how-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.how-pill {
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.25);
+  opacity: .92;
+}
+
+.how-faq { margin-top: 14px; }
+
+.how-faq h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.how-faq-item {
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(255,255,255,.02);
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.how-faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.how-faq-body {
+  margin-top: 10px;
+  opacity: .86;
+  line-height: 1.7;
+}
+
+.how-band {
+  padding: 26px 0 10px;
+}
+
+.how-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+@media (max-width: 900px) {
+  .how-band-inner { flex-direction: column; align-items: flex-start; }
+}
+
+.how-band-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
