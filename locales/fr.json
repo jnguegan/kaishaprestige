@@ -1,199 +1,105 @@
 {
   "nav": {
-    "home": "Accueil",
-    "services": "Services",
-    "how": "Comment ça marche",
-    "request": "Demande",
-    "login": "Connexion"
+    "home": "Inicio",
+    "services": "Servicios",
+    "how": "Cómo funciona",
+    "request": "Solicitud",
+    "login": "Acceso"
   },
   "hero": {
-    "title": "Conçu pour la Mobilité d'Élite",
-    "subtitle": "KS Group Concierge fournit des solutions de mobilité de précision pour les athlètes et les professionnels de haut niveau.",
-    "cta": "Demander un service"
+    "title": "Diseñado para el Movimiento de Élite",
+    "subtitle": "KS Group Concierge ofrece soluciones de movilidad de precisión para atletas y profesionales de alto rendimiento.",
+    "cta": "Solicitar servicio"
   },
   "request": {
-    "title": "Demande de Conciergerie",
-    "subtitle": "Partagez votre itinéraire ou votre demande. Nous répondons rapidement avec options et confirmation.",
-    "fullNameLabel": "Nom complet",
+    "title": "Solicitud de Concierge",
+    "subtitle": "Comparte tu itinerario o solicitud. Respondemos rápidamente con opciones y confirmación.",
+    "fullNameLabel": "Nombre completo",
     "emailLabel": "Email",
-    "phoneLabel": "Téléphone / WhatsApp",
-    "serviceLabel": "Service",
-    "servicePlaceholder": "Sélectionnez un service",
-    "dateFromLabel": "Date / Heure (Début)",
-    "dateToLabel": "Date / Heure (Fin)",
-    "fromLabel": "De",
-    "toLabel": "À",
-    "detailsLabel": "Détails",
-    "detailsPlaceholder": "Passagers, bagages, préférences, adresse de prise en charge, numéro de vol, échéances, etc.",
-    "submitBtn": "Envoyer la demande",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "serviceLabel": "Servicio",
+    "servicePlaceholder": "Selecciona un servicio",
+    "dateFromLabel": "Fecha / Hora (Desde)",
+    "dateToLabel": "Fecha / Hora (Hasta)",
+    "fromLabel": "Desde",
+    "toLabel": "Hasta",
+    "detailsLabel": "Detalles",
+    "detailsPlaceholder": "Pasajeros, equipaje, preferencias, dirección de recogida, número de vuelo, plazos, etc.",
+    "submitBtn": "Enviar solicitud",
     "whatsappBtn": "WhatsApp",
-    "note": "Discrétion garantie. Nous ne publions aucune information client."
+    "note": "Discreción garantizada. No publicamos información de clientes."
   },
   "services": {
-    "metaTitle": "Services — KS Group Concierge",
-    "kicker": "Services de Conciergerie",
-    "title": "Un accompagnement sur mesure. Partout. À tout moment.",
-    "subtitle": "De l’aviation privée à la relocation et aux expériences lifestyle — nous coordonnons chaque détail avec discrétion.",
-    "ctaPrimary": "Faire une demande",
-    "ctaSecondary": "Comment ça marche",
+    "metaTitle": "Servicios — KS Group Concierge",
+    "kicker": "Servicios de Concierge",
+    "title": "Soporte a medida. En cualquier lugar. En cualquier momento.",
+    "subtitle": "Desde aviación privada hasta reubicación y experiencias lifestyle — coordinamos cada detalle con discreción.",
+    "ctaPrimary": "Hacer solicitud",
+    "ctaSecondary": "Cómo funciona",
     "cards": {
-      "cta": "Demander ce service",
+      "cta": "Solicitar este servicio",
       "elite": {
-        "title": "Mobilité d'Élite",
-        "desc": "Transferts VIP, coordination de sécurité rapprochée, accès prioritaire et itinéraires discrets.",
-        "li1": "Accueil VIP aéroport",
-        "li2": "Coordination transport sécurisé",
-        "li3": "Planification d’itinéraires exécutifs"
+        "title": "Movilidad de Élite",
+        "desc": "Traslados VIP, coordinación de seguridad y rutas discretas.",
+        "li1": "Meet & assist VIP",
+        "li2": "Transporte seguro coordinado",
+        "li3": "Planificación ejecutiva"
       },
       "aviation": {
-        "title": "Aviation Privée",
-        "desc": "Charters, planification de route, préférences à bord et gestion au sol.",
-        "li1": "Jets / hélicoptères",
-        "li2": "Coordination FBO",
-        "li3": "Catering & demandes spéciales"
+        "title": "Aviación Privada",
+        "desc": "Charters, planificación de rutas y gestión en tierra.",
+        "li1": "Jets / helicópteros",
+        "li2": "Coordinación FBO",
+        "li3": "Catering y solicitudes especiales"
       },
       "ground": {
-        "title": "Transport de Luxe",
-        "desc": "Véhicules haut de gamme avec chauffeurs professionnels dans le monde entier.",
-        "li1": "Chauffeur & standby",
-        "li2": "Location premium",
-        "li3": "Organisation transport groupe"
+        "title": "Chófer de Lujo",
+        "desc": "Vehículos premium con chófer profesional en todo el mundo.",
+        "li1": "Chófer y standby",
+        "li2": "Alquiler premium",
+        "li3": "Transporte para grupos"
       },
       "relocation": {
-        "title": "Relocation & Logistique",
-        "desc": "Transitions haut de gamme entre clubs, villes et pays.",
-        "li1": "Coordination déménagement",
-        "li2": "Livraisons prioritaires",
-        "li3": "Support installation locale"
+        "title": "Reubicación y Logística",
+        "desc": "Transiciones de alto nivel entre clubes, ciudades y países.",
+        "li1": "Coordinación de mudanza",
+        "li2": "Entregas prioritarias",
+        "li3": "Soporte local"
       },
       "lifestyle": {
-        "title": "Lifestyle & Expériences",
-        "desc": "Restaurants, événements, réservations et expériences exclusives.",
-        "li1": "Restaurants & nightlife",
-        "li2": "Accès VIP événements",
-        "li3": "Expériences sur mesure"
+        "title": "Lifestyle y Experiencias",
+        "desc": "Restaurantes, eventos y experiencias exclusivas.",
+        "li1": "Restaurantes y ocio",
+        "li2": "Acceso VIP",
+        "li3": "Experiencias personalizadas"
       },
       "corporate": {
-        "title": "Support Corporate",
-        "desc": "Assistance exécutive : planning, lieux, interprètes et coordination prestataires.",
-        "li1": "Réservation salles",
-        "li2": "Interprètes & support local",
-        "li3": "Coordination fournisseurs"
+        "title": "Soporte Corporativo",
+        "desc": "Asistencia ejecutiva: agenda, espacios e intérpretes.",
+        "li1": "Reservas de espacios",
+        "li2": "Intérpretes y apoyo local",
+        "li3": "Coordinación de proveedores"
       }
     }
   },
   "how": {
-    "metaTitle": "Comment ça marche — KS Group Concierge",
-    "kicker": "Comment ça marche",
-    "title": "Simple, rapide, discret.",
-    "subtitle": "Vous envoyez la demande, nous confirmons les détails et le prix, puis nous exécutons avec précision.",
+    "metaTitle": "Cómo funciona — KS Group Concierge",
+    "kicker": "Cómo funciona",
+    "title": "Simple, rápido y discreto.",
+    "subtitle": "Envías la solicitud, confirmamos detalles y precio, y lo ejecutamos con precisión.",
     "steps": {
       "s1": {
-        "title": "Envoyer",
-        "desc": "Indiquez dates, lieux, préférences, budget et urgence."
+        "title": "Enviar",
+        "desc": "Indica fechas, lugares, preferencias y urgencia."
       },
       "s2": {
-        "title": "Confirmer",
-        "desc": "Nous clarifions les détails et validons disponibilité et coût."
+        "title": "Confirmar",
+        "desc": "Confirmamos disponibilidad y coste."
       },
       "s3": {
-        "title": "Exécuter",
-        "desc": "Nous coordonnons de bout en bout jusqu’à finalisation."
+        "title": "Ejecutar",
+        "desc": "Coordinamos todo hasta la finalización."
       }
     }
-  },
-    "services": {
-    "metaTitle": "Services — KS Group Concierge",
-    "kicker": "Services de conciergerie",
-    "title": "Un accompagnement sur mesure. Partout. À tout moment.",
-    "subtitle": "De l’aviation privée à la relocalisation et aux prestations lifestyle — nous coordonnons chaque détail avec discrétion.",
-    "ctaPrimary": "Faire une demande",
-    "ctaSecondary": "Comment ça marche",
-    "cards": {
-      "cta": "Demander ce service",
-      "elite": {
-        "title": "Mobilité d’élite",
-        "desc": "Transferts VIP, coordination de protection rapprochée, accès prioritaire et itinéraires discrets.",
-        "li1": "Accueil VIP à l’aéroport (meet & assist)",
-        "li2": "Coordination de transport sécurisé",
-        "li3": "Planification d’itinéraire exécutif"
-      },
-      "aviation": {
-        "title": "Aviation privée",
-        "desc": "Recherche de charter, planification d’itinéraire, préférences à bord et assistance au sol.",
-        "li1": "Options jet / hélicoptère",
-        "li2": "Coordination FBO (aviation d’affaires)",
-        "li3": "Catering & demandes spéciales"
-      },
-      "ground": {
-        "title": "Mobilité terrestre",
-        "desc": "Véhicules avec chauffeur, locations premium, logistique multi-villes et service en attente.",
-        "li1": "Chauffeur & mise à disposition",
-        "li2": "Location de véhicule premium",
-        "li3": "Organisation de transport de groupe"
-      },
-      "relocation": {
-        "title": "Relocalisation & logistique",
-        "desc": "Aide à la relocalisation, stockage, coordination de déménagement et livraisons prioritaires.",
-        "li1": "Coordination déménagement & stockage",
-        "li2": "Livraisons & coursiers",
-        "li3": "Assistance à l’installation locale"
-      },
-      "lifestyle": {
-        "title": "Lifestyle & expériences",
-        "desc": "Restaurants, événements, réservations, expériences sur mesure et occasions spéciales.",
-        "li1": "Restaurants & vie nocturne",
-        "li2": "Événements & accès VIP",
-        "li3": "Expériences sur mesure"
-      },
-      "corporate": {
-        "title": "Support corporate",
-        "desc": "Assistance exécutive : packs de voyage, agendas, lieux, interprètes et coordination de prestataires.",
-        "li1": "Réservation de réunions & lieux",
-        "li2": "Interprètes & assistance locale",
-        "li3": "Coordination de prestataires"
-      }
-    }
-  },
-  "how": {
-  "metaTitle": "Comment ça marche — KS Group Concierge",
-  "kicker": "Comment ça marche",
-  "title": "Simple, rapide, discret.",
-  "subtitle": "Soumettez votre demande, nous confirmons les détails et le prix, puis nous exécutons avec précision.",
-  "ctaPrimary": "Faire une demande",
-  "ctaSecondary": "Écrivez-nous sur WhatsApp",
-  "steps": {
-    "s1": { "title": "Soumettre", "desc": "Dites-nous ce dont vous avez besoin : dates, lieux, préférences, budget et urgence." },
-    "s2": { "title": "Confirmer", "desc": "Nous précisons les détails, confirmons la disponibilité et envoyons un plan clair et le coût." },
-    "s3": { "title": "Exécuter", "desc": "Nous coordonnons de bout en bout et partageons des mises à jour jusqu’à finalisation." }
-  },
-  "rules": {
-    "title": "Principes de service",
-    "li1": "Discrétion & confidentialité",
-    "li2": "Rapidité et précision",
-    "li3": "Partenaires premium uniquement",
-    "li4": "Communication claire"
-  },
-  "sla": {
-    "title": "Délai de réponse habituel",
-    "desc": "Nous répondons généralement en quelques heures. Pour l’urgence, WhatsApp est le plus rapide.",
-    "p1": "Standard : le jour même",
-    "p2": "Urgent : prioritaire",
-    "p3": "Complexe : 24–48h"
-  },
-  "faq": {
-    "title": "FAQ",
-    "q1": "Travaillez-vous à l’international ?",
-    "a1": "Oui. Nous coordonnons dans les grandes villes et destinations, selon disponibilité.",
-    "q2": "Comment gérez-vous les paiements ?",
-    "a2": "Nous confirmons le prix avant exécution. Les moyens de paiement dépendent du service et du prestataire.",
-    "q3": "Mes informations sont-elles confidentielles ?",
-    "a3": "Toujours. Nous ne partageons que l’essentiel avec des partenaires sélectionnés pour traiter votre demande."
-  },
-  "band": {
-    "title": "Faites votre prochaine demande maintenant.",
-    "desc": "Cela prend moins d’une minute pour commencer.",
-    "cta": "Faire une demande",
-    "services": "Voir les services"
   }
 }
