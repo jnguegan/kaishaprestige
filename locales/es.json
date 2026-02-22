@@ -154,6 +154,46 @@
         "li3": "Coordinación de proveedores"
       }
     }
+  },
+  "how": {
+  "metaTitle": "Cómo funciona — KS Group Concierge",
+  "kicker": "Cómo funciona",
+  "title": "Simple, rápido, discreto.",
+  "subtitle": "Envía tu solicitud, confirmamos detalles y precio, y luego ejecutamos con precisión.",
+  "ctaPrimary": "Hacer una solicitud",
+  "ctaSecondary": "Escríbenos por WhatsApp",
+  "steps": {
+    "s1": { "title": "Enviar", "desc": "Dinos lo que necesitas: fechas, lugares, preferencias, presupuesto y urgencia." },
+    "s2": { "title": "Confirmar", "desc": "Aclaramos detalles, confirmamos disponibilidad y enviamos un plan claro y el coste." },
+    "s3": { "title": "Entregar", "desc": "Coordinamos de principio a fin y compartimos actualizaciones hasta la finalización." }
+  },
+  "rules": {
+    "title": "Principios del servicio",
+    "li1": "Discreción y confidencialidad",
+    "li2": "Rapidez y precisión",
+    "li3": "Solo socios premium",
+    "li4": "Comunicación clara"
+  },
+  "sla": {
+    "title": "Tiempo de respuesta habitual",
+    "desc": "Normalmente respondemos en pocas horas. Para urgencias, WhatsApp es lo más rápido.",
+    "p1": "Estándar: el mismo día",
+    "p2": "Urgente: prioridad",
+    "p3": "Complejo: 24–48 h"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Trabajan a nivel internacional?",
+    "a1": "Sí. Coordinamos en grandes ciudades y destinos, sujeto a disponibilidad.",
+    "q2": "¿Cómo gestionan los pagos?",
+    "a2": "Confirmamos el precio antes de ejecutar. Los métodos de pago dependen del servicio y del proveedor.",
+    "q3": "¿Mi información es confidencial?",
+    "a3": "Siempre. Solo compartimos lo esencial con socios verificados para cumplir tu solicitud."
+  },
+  "band": {
+    "title": "Haz tu próxima solicitud ahora.",
+    "desc": "Se tarda menos de un minuto en empezar.",
+    "cta": "Hacer una solicitud",
+    "services": "Ver servicios"
   }
 }
-
