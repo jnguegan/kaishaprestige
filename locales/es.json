@@ -82,7 +82,7 @@
       }
     }
   },
-  "how": {
+    "how": {
     "metaTitle": "Cómo funciona — KS Group Concierge",
     "kicker": "Cómo funciona",
     "title": "Simple, rápido y discreto.",
@@ -92,7 +92,7 @@
         "title": "Enviar",
         "desc": "Indica fechas, lugares, preferencias y urgencia."
       },
-          "s2": {
+      "s2": {
         "title": "Confirmar",
         "desc": "Confirmamos disponibilidad y coste."
       },
@@ -104,6 +104,32 @@
         "title": "Seguimiento",
         "desc": "Realizamos seguimiento posterior para garantizar su satisfacción."
       }
+    },
+    "rules": {
+      "title": "Reglas y funcionamiento",
+      "li1": "Envía tu solicitud mediante el formulario o WhatsApp.",
+      "li2": "Indica fecha, lugar, presupuesto y preferencias.",
+      "li3": "Puede requerirse un anticipo para confirmar ciertos servicios.",
+      "li4": "Los costes de terceros (billetes, reservas, etc.) siguen las condiciones de cada proveedor."
+    },
+    "sla": {
+      "title": "Compromiso de servicio (SLA)",
+      "desc": "Tiempos de respuesta estimados según la prioridad de tu solicitud.",
+      "p1": "Estándar: respuesta en 24 h",
+      "p2": "Prioritario: respuesta en 4 h",
+      "p3": "Urgente: respuesta en 1 h"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿En qué zonas operan?",
+      "q2": "¿Cómo se calculan las tarifas?",
+      "q3": "¿Puedo modificar o cancelar una solicitud?"
+    },
+    "band": {
+      "title": "¿Listo para comenzar?",
+      "desc": "Envía tu solicitud y nosotros nos encargamos del resto.",
+      "cta": "Hacer una solicitud",
+      "services": "Ver servicios"
     }
   }
 }
