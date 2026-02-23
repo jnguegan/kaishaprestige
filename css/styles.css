@@ -680,21 +680,21 @@ header.nav > nav{
 /* REQUEST PAGE – LUXURY BG      */
 /* ============================= */
 
-.request-page {
-  background: url("assets/images/request-jet.jpg") center center / cover no-repeat fixed;
+.request-page{
+  background: url("../assets/images/request-jet.jpg") center center / cover no-repeat fixed;
   min-height: 100vh;
   position: relative;
 }
 
-.request-page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.78); /* dark overlay for readability */
-  z-index: 0;
+.request-page::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.78);
+  z-index:0;
 }
 
-.request-page > * {
+.request-page > *{
   position: relative;
   z-index: 1;
 }
