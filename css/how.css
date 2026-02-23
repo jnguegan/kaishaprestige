@@ -246,3 +246,26 @@
 .btn:active {
   text-decoration: none;
 }
+
+/* ============================= */
+/* HOW HERO BACKGROUND IMAGE     */
+/* ============================= */
+
+.how-hero {
+  background: url("../images/how-hero.jpg") center center / cover no-repeat;
+  padding: 140px 0;
+  position: relative;
+  color: #ffffff;
+}
+
+.how-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* dark luxury overlay */
+}
+
+.how-hero .how-wrap {
+  position: relative;
+  z-index: 1;
+}
