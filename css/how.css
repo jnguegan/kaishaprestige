@@ -198,3 +198,34 @@
   --ks-black: #0F0F0F;
   --ks-white: #FFFFFF;
 }
+.btn--primary{
+  background: var(--ks-gold);
+  color: var(--ks-black);
+  border: 1px solid var(--ks-gold);
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn--primary:hover{
+  background: var(--ks-gold-dark);
+  border-color: var(--ks-gold-dark);
+  transform: translateY(-2px);
+}
+
+.btn--ghost{
+  background: transparent;
+  color: var(--ks-gold);
+  border: 1px solid var(--ks-gold);
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn--ghost:hover{
+  background: var(--ks-gold);
+  color: var(--ks-black);
+}
