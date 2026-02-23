@@ -187,9 +187,10 @@
   flex-wrap: wrap;
 }
 
-.how-band-actions {
+..how-actions{
+  margin-top: 28px;
   display: flex;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 :root{
@@ -228,4 +229,13 @@
 .btn--ghost:hover{
   background: var(--ks-gold);
   color: var(--ks-black);
+}
+.how-actions{
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn--primary{
+  box-shadow: 0 4px 18px rgba(198, 161, 74, 0.25);
 }
