@@ -92,7 +92,7 @@
         "title": "Envoyer",
         "desc": "Indiquez dates, lieux, préférences, budget et urgence."
       },
-            "s2": {
+      "s2": {
         "title": "Confirmer",
         "desc": "Nous clarifions les détails et validons disponibilité et coût."
       },
@@ -104,6 +104,32 @@
         "title": "Suivi",
         "desc": "Nous assurons un suivi après le service pour garantir votre satisfaction."
       }
+    },
+    "rules": {
+      "title": "Règles & fonctionnement",
+      "li1": "Envoyez votre demande via le formulaire ou WhatsApp.",
+      "li2": "Indiquez la date, le lieu, le budget et vos préférences.",
+      "li3": "Un acompte peut être requis pour confirmer certaines prestations.",
+      "li4": "Les frais tiers (billets, réservations, etc.) suivent les conditions des fournisseurs."
+    },
+    "sla": {
+      "title": "Engagement de service (SLA)",
+      "desc": "Délais de réponse indicatifs selon la priorité de votre demande.",
+      "p1": "Standard : réponse sous 24 h",
+      "p2": "Prioritaire : réponse sous 4 h",
+      "p3": "Urgent : réponse sous 1 h"
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Dans quelles zones intervenez-vous ?",
+      "q2": "Comment sont calculés les tarifs ?",
+      "q3": "Puis-je modifier ou annuler une demande ?"
+    },
+    "band": {
+      "title": "Prêt à démarrer ?",
+      "desc": "Envoyez votre demande et nous nous occupons du reste.",
+      "cta": "Faire une demande",
+      "services": "Voir les services"
     }
   }
 }
