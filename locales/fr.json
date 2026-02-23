@@ -92,13 +92,17 @@
         "title": "Envoyer",
         "desc": "Indiquez dates, lieux, préférences, budget et urgence."
       },
-      "s2": {
+            "s2": {
         "title": "Confirmer",
         "desc": "Nous clarifions les détails et validons disponibilité et coût."
       },
       "s3": {
         "title": "Exécuter",
         "desc": "Nous coordonnons de bout en bout jusqu’à finalisation."
+      },
+      "s4": {
+        "title": "Suivi",
+        "desc": "Nous assurons un suivi après le service pour garantir votre satisfaction."
       }
     }
   }
