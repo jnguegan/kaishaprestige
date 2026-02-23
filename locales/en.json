@@ -100,12 +100,11 @@
     }
   },
 
-  "how": {
+   "how": {
     "metaTitle": "How it works — KS Group Concierge",
     "kicker": "How it works",
     "title": "Simple, fast, discreet.",
     "subtitle": "Submit your request, we confirm details and pricing, then we execute with precision.",
-
     "steps": {
       "s1": {
         "title": "Submit",
@@ -118,7 +117,37 @@
       "s3": {
         "title": "Deliver",
         "desc": "We coordinate end-to-end and share updates until completion."
+      },
+      "s4": {
+        "title": "Follow-up",
+        "desc": "We provide post-service follow-up to ensure everything meets your expectations."
       }
+    },
+    "rules": {
+      "title": "Rules & Process",
+      "li1": "Submit your request via the form or WhatsApp.",
+      "li2": "Provide date, location, budget and preferences.",
+      "li3": "A deposit may be required to confirm certain services.",
+      "li4": "Third-party costs (tickets, reservations, etc.) follow supplier terms."
+    },
+    "sla": {
+      "title": "Service Commitment (SLA)",
+      "desc": "Estimated response times depending on request priority.",
+      "p1": "Standard: response within 24h",
+      "p2": "Priority: response within 4h",
+      "p3": "Urgent: response within 1h"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Which areas do you operate in?",
+      "q2": "How is pricing calculated?",
+      "q3": "Can I modify or cancel a request?"
+    },
+    "band": {
+      "title": "Ready to get started?",
+      "desc": "Send your request and we will handle the rest.",
+      "cta": "Make a request",
+      "services": "View services"
     }
   }
 }
