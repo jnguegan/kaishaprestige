@@ -92,13 +92,17 @@
         "title": "Enviar",
         "desc": "Indica fechas, lugares, preferencias y urgencia."
       },
-      "s2": {
+          "s2": {
         "title": "Confirmar",
         "desc": "Confirmamos disponibilidad y coste."
       },
       "s3": {
         "title": "Ejecutar",
         "desc": "Coordinamos todo hasta la finalización."
+      },
+      "s4": {
+        "title": "Seguimiento",
+        "desc": "Realizamos seguimiento posterior para garantizar su satisfacción."
       }
     }
   }
