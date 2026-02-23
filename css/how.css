@@ -288,3 +288,24 @@
   position: relative;
   z-index: 1;
 }
+/* Prestige Banner Styling */
+
+.how-band-brand {
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(198, 161, 74, 0.2);
+}
+
+.how-band-brand img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  opacity: 0.95;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.how-band-brand img:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
