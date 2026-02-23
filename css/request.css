@@ -1,0 +1,5 @@
+/* Request page only */
+
+body.request-bg{
+  background: url("/assets/images/request-jet.jpg") center / cover no-repeat fixed;
+}
