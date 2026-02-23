@@ -703,3 +703,9 @@ main.page.request-page > *{
   position: relative;
   z-index: 1;
 }
+   /* Request page background (force override, no layout changes) */
+main.page.request-page{
+  background: url("/assets/images/request-jet.jpg") center / cover no-repeat fixed !important;
+  background-color: transparent !important;
+  min-height: 100vh;
+}
