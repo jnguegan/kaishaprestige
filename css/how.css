@@ -192,4 +192,9 @@
   gap: 12px;
   flex-wrap: wrap;
 }
-
+:root{
+  --ks-gold: #C6A14A;
+  --ks-gold-dark: #A8832F;
+  --ks-black: #0F0F0F;
+  --ks-white: #FFFFFF;
+}
