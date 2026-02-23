@@ -239,3 +239,10 @@
 .btn--primary{
   box-shadow: 0 4px 18px rgba(198, 161, 74, 0.25);
 }
+.btn,
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  text-decoration: none;
+}
