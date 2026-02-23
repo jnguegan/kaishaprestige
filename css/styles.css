@@ -680,13 +680,18 @@ header.nav > nav{
 /* REQUEST PAGE – LUXURY BG      */
 /* ============================= */
 
-.request-page{
-  background: url("../assets/images/request-jet.jpg") center center / cover no-repeat fixed;
+/* REQUEST PAGE background (strong + safe) */
+main.page.request-page{
+  background-image: url("../assets/images/request-jet.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
   position: relative;
 }
 
-.request-page::before{
+main.page.request-page::before{
   content:"";
   position:absolute;
   inset:0;
@@ -694,7 +699,7 @@ header.nav > nav{
   z-index:0;
 }
 
-.request-page > *{
+main.page.request-page > *{
   position: relative;
   z-index: 1;
 }
