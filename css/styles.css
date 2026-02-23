@@ -680,32 +680,7 @@ header.nav > nav{
 /* REQUEST PAGE – LUXURY BG      */
 /* ============================= */
 
-/* REQUEST PAGE background (strong + safe) */
-main.page.request-page{
-  background-image: url("../assets/images/request-jet.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  position: relative;
-}
-
-main.page.request-page::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: rgba(0,0,0,0.78);
-  z-index:0;
-}
-
-main.page.request-page > *{
-  position: relative;
-  z-index: 1;
-}
-   /* Request page background (force override, no layout changes) */
-main.page.request-page{
-  background: url("/assets/images/request-jet.jpg") center / cover no-repeat fixed !important;
-  background-color: transparent !important;
-  min-height: 100vh;
+/* Request page background only (clean + safe) */
+body.request-bg{
+  background: url("/assets/images/request-jet.jpg") center / cover no-repeat fixed;
 }
