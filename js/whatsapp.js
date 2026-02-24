@@ -4,7 +4,7 @@
 
 (function () {
 
-  const WA_NUMBER = "33783823945";
+  const WA_NUMBER = "33781987928";
 
   function getLang() {
     const sel = document.getElementById("langSelect");
