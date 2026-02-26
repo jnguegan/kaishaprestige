@@ -305,5 +305,14 @@ Thank you.`;
   })();
 </script>
 <script src="/js/whatsapp.js" defer></script>
+
+<script>
+  const fromDate = document.querySelector('input[name="date_from"]');
+  const toDate = document.querySelector('input[name="date_to"]');
+
+  fromDate.addEventListener('change', function () {
+    toDate.min = this.value;
+  });
+</script>  
 </body>
 </html>
