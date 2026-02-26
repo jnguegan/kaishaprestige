@@ -98,16 +98,26 @@
       </div>
 
       <div class="grid-2">
-        <div class="field">
-          <label data-i18n="request.dateFromLabel">Date / Time (From)</label>
-          <input name="date_from" type="datetime-local" />
-        </div>
+  <div class="field">
+    <label data-i18n="request.dateFromLabel">Date (From)</label>
+    <input name="date_from" type="date" required />
+  </div>
 
-        <div class="field">
-          <label data-i18n="request.dateToLabel">Date / Time (To)</label>
-          <input name="date_to" type="datetime-local" />
-        </div>
-      </div>
+  <div class="field">
+    <label>Time (From)</label>
+    <input name="time_from" type="time" required />
+  </div>
+
+  <div class="field">
+    <label data-i18n="request.dateToLabel">Date (To)</label>
+    <input name="date_to" type="date" required />
+  </div>
+
+  <div class="field">
+    <label>Time (To)</label>
+    <input name="time_to" type="time" required />
+  </div>
+</div>
 
       <div class="grid-2">
         <div class="field">
