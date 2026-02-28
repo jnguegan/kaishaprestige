@@ -135,5 +135,12 @@
   },
 "brand": {
     "name": "KS Group Concierge"
-  }
+  },
+  "footer": {
+  "legal": "Mentions légales",
+  "privacy": "Confidentialité",
+  "terms": "Conditions",
+  "cookies": "Cookies"
 }
+
+  
