@@ -150,10 +150,17 @@
       "cta": "Make a request",
       "services": "View services"
     }
-   },
+  },
 
   "brand": {
     "name": "KS Group Concierge"
-  }
-}
+  },
 
+  "footer": {
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies"
+  }
+
+}
