@@ -161,6 +161,159 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "cookies": "Cookies"
-  }
+  },
+  "legal": {
+  "metaTitle": "Legal Notice — KS Group Concierge",
+  "title": "Legal Notice",
+  "intro": "This website is operated by the entity identified below. If you have any questions about these notices, please contact us using the details provided.",
 
+  "operatorTitle": "Website Operator",
+
+  "operator": {
+    "brandLabel": "Brand / Trading name:",
+    "entityLabel": "Legal entity:",
+    "regLabel": "Registration number:",
+    "addressLabel": "Registered address:",
+    "emailLabel": "Contact email:",
+    "phoneLabel": "Contact phone / WhatsApp:",
+
+    "entityValue": "[Insert registered company / operator name]",
+    "regValue": "[Insert number]",
+    "addressValue": "[Insert address]",
+    "emailValue": "[Insert email]",
+    "phoneValue": "[Insert number]"
+  },
+
+  "servicesTitle": "Nature of Services",
+  "servicesText": "KS Group Concierge provides high-end concierge coordination services, including sourcing options, booking assistance, and logistics coordination through trusted third-party suppliers.",
+  "thirdPartyText": "Unless expressly stated otherwise in writing, KS Group Concierge does not directly operate transportation, accommodation, venues, or other third-party services. Supplier terms may apply.",
+
+  "confTitle": "Confidentiality",
+  "confText": "Client discretion is a core principle. Information relating to client identities, travel plans, bookings, and preferences is treated as confidential and disclosed only when necessary to fulfil requested services or when legally required.",
+
+  "ipTitle": "Intellectual Property",
+  "ipText": "All website content including text, branding, graphics, and service descriptions is protected by applicable intellectual property laws. Unauthorized reproduction or commercial use is prohibited.",
+
+  "disclaimerTitle": "Liability Disclaimer",
+  "disclaimerText": "While every effort is made to ensure service quality and reliability, availability and third-party supplier performance cannot be guaranteed. KS Group Concierge acts as a coordinator and is not responsible for the operational conduct of independent suppliers.",
+
+  "lawTitle": "Governing Law",
+  "lawText": "Unless otherwise required by mandatory consumer laws, disputes relating to this website and these notices will be handled under the laws of [Insert jurisdiction].",
+
+  "updated": "Last updated: 2026"
+},
+
+"privacy": {
+  "metaTitle": "Privacy Policy — KS Group Concierge",
+  "title": "Privacy Policy",
+  "intro": "KS Group Concierge is committed to protecting the privacy and discretion of its clients. This policy explains how we collect, use, and protect personal data when you use our website and concierge services.",
+
+  "collectTitle": "Information We Collect",
+  "collect": {
+    "li1": "Name, contact information and communication details.",
+    "li2": "Travel preferences and service requests.",
+    "li3": "Booking information required for service fulfilment.",
+    "li4": "Technical data required for website functionality and security."
+  },
+
+  "purposeTitle": "Purpose of Processing",
+  "purposeText": "Personal information is used to respond to enquiries, coordinate concierge services, manage bookings, and communicate with clients regarding requested services.",
+
+  "vipTitle": "Confidential Client Handling",
+  "vipText": "We apply strict confidentiality standards. Personal information is shared only with trusted service providers when necessary to deliver the requested service, or where required by law.",
+
+  "legalBasesTitle": "Legal Bases (GDPR)",
+  "legalBases": {
+    "li1": "Contract / pre-contract steps: to provide requested services and manage bookings.",
+    "li2": "Legitimate interests: service quality, security, fraud prevention, business operations.",
+    "li3": "Legal obligation: accounting and regulatory requirements (where applicable).",
+    "li4": "Consent: where required (e.g., optional marketing or certain cookies)."
+  },
+
+  "internationalTitle": "International Services",
+  "internationalText": "Concierge requests may involve international travel and suppliers. Where necessary, data may be transferred internationally with appropriate safeguards consistent with applicable law.",
+
+  "rightsTitle": "Your Rights",
+  "rights": {
+    "li1": "Access, correction, deletion, restriction, and portability (where applicable).",
+    "li2": "Object to processing based on legitimate interests.",
+    "li3": "Withdraw consent at any time (where processing relies on consent).",
+    "li4": "Lodge a complaint with your local data protection authority."
+  },
+  "cookiesTitle": "Cookies",
+  "cookiesText": "See our Cookies Policy for details.",
+
+  "securityTitle": "Data Security",
+  "securityText": "We implement appropriate technical and organisational measures to safeguard client data against unauthorised access, disclosure, or misuse.",
+
+  "updated": "Last updated: 2026"
+},
+
+"terms": {
+  "metaTitle": "Terms of Service — KS Group Concierge",
+  "title": "Terms of Service",
+  "intro": "These Terms govern your use of KS Group Concierge and the coordination services we provide. By submitting a request or using this website, you agree to these Terms.",
+
+  "scopeTitle": "Service Scope",
+  "scopeText": "KS Group Concierge provides bespoke lifestyle and travel coordination services. We assist in sourcing options, arranging bookings, and managing logistics with third-party suppliers.",
+
+  "thirdPartyTitle": "Third-Party Providers",
+  "thirdPartyText": "Many services are delivered by independent suppliers. Supplier terms may apply in addition to these Terms. We coordinate and assist, but do not control supplier operations unless explicitly stated in writing.",
+
+  "pricingTitle": "Pricing, Deposits & Payments",
+  "pricing": {
+    "li1": "A concierge coordination fee may apply and will be disclosed before confirmation.",
+    "li2": "Some services require deposits or pre-payment to secure availability.",
+    "li3": "Third-party supplier charges may be payable as required by suppliers."
+  },
+
+  "cancellationTitle": "Cancellations & Changes",
+  "cancellationText": "Cancellations and changes are subject to supplier rules and timelines. Concierge fees may be non-refundable where work has begun or supplier costs have been incurred.",
+
+  "clientTitle": "Client Responsibilities",
+  "client": {
+    "li1": "Provide accurate details (dates, locations, names, preferences).",
+    "li2": "Comply with venue rules, local laws, and supplier terms.",
+    "li3": "Ensure passports/visas/health requirements where applicable."
+  },
+
+  "confTitle": "Confidentiality",
+  "confText": "We treat client requests as confidential and share details only with parties necessary to deliver the service, unless disclosure is required by law.",
+
+  "liabilityTitle": "Limitation of Liability",
+  "liability": {
+    "li1": "We are not liable for acts or omissions of independent third-party suppliers.",
+    "li2": "To the extent permitted by law, we are not liable for indirect or consequential losses.",
+    "li3": "Where permitted, liability is limited to the concierge fee paid for the relevant request."
+  },
+  "liabilityNote": "Nothing limits liability where it cannot be excluded under applicable law.",
+
+  "lawTitle": "Governing Law",
+  "lawText": "These Terms are governed by the laws of [Insert jurisdiction], unless mandatory consumer laws provide otherwise.",
+
+  "updated": "Last updated: 2026"
+},
+
+"cookies": {
+  "metaTitle": "Cookies Policy — KS Group Concierge",
+  "title": "Cookies Policy",
+
+  "intro": "Cookies are small text files stored on your device. We use them to make the website function, improve performance, and understand usage. Where required, we ask for consent for non-essential cookies.",
+
+  "typesTitle": "Types of cookies",
+  "types": {
+    "li1": "Essential: required for core website functions and security.",
+    "li2": "Preferences: remember choices such as language selection.",
+    "li3": "Analytics: help us understand website usage and improve experience.",
+    "li4": "Marketing: used to measure campaigns or show relevant messages if enabled."
+  },
+
+  "usedTitle": "Cookies we use",
+  "usedText": "Currently this website uses essential functionality cookies and may store language preferences.",
+
+  "manageTitle": "Managing cookies",
+  "manageText": "You can control cookies through your browser settings. Blocking cookies may affect certain website functions.",
+
+  "updated": "Last updated: 2026"
+}
 }
