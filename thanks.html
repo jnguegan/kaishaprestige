@@ -3,11 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Request sent</title>
+  <title>Request sent — KS Group Concierge</title>
 </head>
+
 <body style="background:#0A0A0C;color:#fff;font-family:system-ui;padding:40px;">
+
   <h1>Request sent ✅</h1>
   <p>Thank you. We’ll confirm availability and next steps shortly.</p>
-  <p><a href="/" style="color:#c9a24a;">Back to home</a></p>
+
+  <p>
+    <a href="/" style="color:#c9a24a;text-decoration:none;font-weight:600;">
+      Back to home
+    </a>
+  </p>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-row">
+
+      <div class="muted">
+        © <span id="y"></span>
+        <span>KS Group Concierge</span>
+      </div>
+
+      <div class="muted">
+        <a href="/legal.html">Legal</a>
+        <span class="sep">•</span>
+        <a href="/privacy.html">Privacy</a>
+        <span class="sep">•</span>
+        <a href="/terms.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="/cookies.html">Cookies</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+<script src="/js/i18n.js"></script>
+<script src="/js/whatsapp.js"></script>
+
 </body>
 </html>
