@@ -150,5 +150,10 @@
       "cta": "Make a request",
       "services": "View services"
     }
+   },
+
+  "brand": {
+    "name": "KS Group Concierge"
   }
 }
+
