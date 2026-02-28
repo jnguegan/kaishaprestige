@@ -135,5 +135,165 @@
   },
 "brand": {
     "name": "KS Group Concierge"
-  }
+  },
+  "footer": {
+  "legal": "Aviso legal",
+  "privacy": "Política de privacidad",
+  "terms": "Términos de servicio",
+  "cookies": "Cookies"
+},
+
+"legal": {
+  "metaTitle": "Aviso legal — KS Group Concierge",
+  "title": "Aviso legal",
+  "intro": "Este sitio web es operado por la entidad indicada a continuación. Si tienes alguna pregunta sobre estos avisos, por favor contáctanos mediante los datos proporcionados.",
+
+  "operatorTitle": "Titular del sitio",
+  "operator": {
+    "brandLabel": "Marca / nombre comercial:",
+    "entityLabel": "Entidad legal:",
+    "regLabel": "Número de registro:",
+    "addressLabel": "Domicilio social:",
+    "emailLabel": "Correo de contacto:",
+    "phoneLabel": "Teléfono / WhatsApp:",
+
+    "entityValue": "[Inserta el nombre de la empresa / operador]",
+    "regValue": "[Inserta el número]",
+    "addressValue": "[Inserta la dirección]",
+    "emailValue": "[Inserta el correo]",
+    "phoneValue": "[Inserta el número]"
+  },
+
+  "servicesTitle": "Naturaleza de los servicios",
+  "servicesText": "KS Group Concierge ofrece servicios de coordinación de concierge de alta gama, incluyendo la búsqueda de opciones, asistencia con reservas y coordinación logística a través de proveedores externos de confianza.",
+  "thirdPartyText": "Salvo que se indique lo contrario por escrito, KS Group Concierge no opera directamente transporte, alojamiento, espacios u otros servicios prestados por terceros. Pueden aplicarse las condiciones de los proveedores.",
+
+  "confTitle": "Confidencialidad",
+  "confText": "La discreción del cliente es un principio esencial. La información relativa a identidades, planes de viaje, reservas y preferencias se trata como confidencial y solo se comparte cuando es necesario para prestar el servicio o cuando la ley lo exija.",
+
+  "ipTitle": "Propiedad intelectual",
+  "ipText": "Todo el contenido del sitio (textos, marca, gráficos y descripciones de servicios) está protegido por las leyes aplicables de propiedad intelectual. Queda prohibida su reproducción o uso comercial no autorizado.",
+
+  "disclaimerTitle": "Exención de responsabilidad",
+  "disclaimerText": "Aunque hacemos todo lo posible para garantizar la calidad y fiabilidad, no se puede garantizar la disponibilidad ni el rendimiento de proveedores externos. KS Group Concierge actúa como coordinador y no es responsable de la gestión operativa de proveedores independientes.",
+
+  "lawTitle": "Ley aplicable",
+  "lawText": "Salvo que la normativa imperativa disponga lo contrario, cualquier disputa relacionada con este sitio y estos avisos se regirá por las leyes de [Inserta la jurisdicción].",
+
+  "updated": "Última actualización: 2026"
+},
+
+"privacy": {
+  "metaTitle": "Política de privacidad — KS Group Concierge",
+  "title": "Política de privacidad",
+  "intro": "KS Group Concierge se compromete a proteger la privacidad y la discreción de sus clientes. Esta política explica cómo recopilamos, usamos y protegemos los datos personales cuando utilizas nuestro sitio web y nuestros servicios.",
+
+  "collectTitle": "Datos que recopilamos",
+  "collect": {
+    "li1": "Nombre, datos de contacto e información de comunicación.",
+    "li2": "Preferencias de viaje y solicitudes de servicio.",
+    "li3": "Información de reservas necesaria para la prestación del servicio.",
+    "li4": "Datos técnicos necesarios para el funcionamiento y la seguridad del sitio."
+  },
+
+  "purposeTitle": "Finalidad del tratamiento",
+  "purposeText": "Los datos personales se utilizan para responder a consultas, coordinar servicios de concierge, gestionar reservas y comunicarnos con los clientes sobre los servicios solicitados.",
+
+  "vipTitle": "Tratamiento confidencial",
+  "vipText": "Aplicamos estándares estrictos de confidencialidad. Los datos personales solo se comparten con proveedores de confianza cuando es necesario para prestar el servicio, o cuando la ley lo requiera.",
+
+  "legalBasesTitle": "Bases legales (RGPD)",
+  "legalBases": {
+    "li1": "Contrato / medidas precontractuales: prestar los servicios solicitados y gestionar reservas.",
+    "li2": "Interés legítimo: calidad del servicio, seguridad, prevención del fraude, operaciones.",
+    "li3": "Obligación legal: obligaciones contables y regulatorias (cuando corresponda).",
+    "li4": "Consentimiento: cuando sea necesario (p. ej., marketing opcional o ciertas cookies)."
+  },
+
+  "internationalTitle": "Servicios internacionales",
+  "internationalText": "Las solicitudes de concierge pueden implicar viajes y proveedores internacionales. Cuando sea necesario, los datos pueden transferirse internacionalmente con salvaguardas adecuadas conforme a la normativa aplicable.",
+
+  "rightsTitle": "Tus derechos",
+  "rights": {
+    "li1": "Acceso, rectificación, supresión, limitación y portabilidad (según corresponda).",
+    "li2": "Oposición al tratamiento basado en interés legítimo.",
+    "li3": "Retirar el consentimiento en cualquier momento (cuando aplique).",
+    "li4": "Presentar una reclamación ante la autoridad de protección de datos competente."
+  },
+
+  "securityTitle": "Seguridad",
+  "securityText": "Implementamos medidas técnicas y organizativas apropiadas para proteger los datos frente a accesos no autorizados, divulgación o uso indebido.",
+
+  "cookiesTitle": "Cookies",
+  "cookiesText": "Consulta nuestra Política de cookies para más detalles.",
+
+  "updated": "Última actualización: 2026"
+},
+
+"terms": {
+  "metaTitle": "Términos de servicio — KS Group Concierge",
+  "title": "Términos de servicio",
+  "intro": "Estos Términos regulan el uso de KS Group Concierge y los servicios de coordinación que ofrecemos. Al enviar una solicitud o utilizar este sitio, aceptas estos Términos.",
+
+  "scopeTitle": "Alcance del servicio",
+  "scopeText": "KS Group Concierge ofrece servicios de coordinación a medida (lifestyle y viajes). Asistimos en la búsqueda de opciones, la organización de reservas y la gestión logística mediante proveedores externos.",
+
+  "thirdPartyTitle": "Proveedores externos",
+  "thirdPartyText": "Muchos servicios son prestados por proveedores independientes. Sus condiciones pueden aplicarse además de estos Términos. Coordinamos y asistimos, pero no controlamos sus operaciones salvo acuerdo expreso por escrito.",
+
+  "pricingTitle": "Precios, depósitos y pagos",
+  "pricing": {
+    "li1": "Puede aplicarse una tarifa de coordinación/concierge y se informará antes de la confirmación.",
+    "li2": "Algunos servicios requieren depósito o prepago para asegurar disponibilidad.",
+    "li3": "Los costes de proveedores externos pueden exigirse según sus condiciones."
+  },
+
+  "cancellationTitle": "Cancelaciones y cambios",
+  "cancellationText": "Las cancelaciones y cambios están sujetos a las normas y plazos de los proveedores. Las tarifas de concierge pueden no ser reembolsables cuando el trabajo haya comenzado o se hayan incurrido costes.",
+
+  "clientTitle": "Responsabilidades del cliente",
+  "client": {
+    "li1": "Proporcionar información precisa (fechas, lugares, nombres, preferencias).",
+    "li2": "Cumplir las normas de los lugares, leyes locales y condiciones de los proveedores.",
+    "li3": "Verificar pasaportes/visados/requisitos sanitarios cuando corresponda."
+  },
+
+  "confTitle": "Confidencialidad",
+  "confText": "Tratamos las solicitudes de los clientes de forma confidencial y solo compartimos información con las partes necesarias para prestar el servicio, salvo obligación legal.",
+
+  "liabilityTitle": "Limitación de responsabilidad",
+  "liability": {
+    "li1": "No somos responsables de actos u omisiones de proveedores externos independientes.",
+    "li2": "En la medida permitida por la ley, no somos responsables de pérdidas indirectas o consecuentes.",
+    "li3": "Cuando la ley lo permita, la responsabilidad se limita a la tarifa de concierge pagada por la solicitud correspondiente."
+  },
+  "liabilityNote": "Nada limita la responsabilidad que no pueda excluirse conforme a la normativa aplicable.",
+
+  "lawTitle": "Ley aplicable",
+  "lawText": "Estos Términos se rigen por las leyes de [Inserta la jurisdicción], salvo que la normativa imperativa disponga lo contrario.",
+
+  "updated": "Última actualización: 2026"
+},
+
+"cookies": {
+  "metaTitle": "Política de cookies — KS Group Concierge",
+  "title": "Política de cookies",
+  "intro": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo. Las usamos para que el sitio funcione, mejorar el rendimiento y comprender el uso. Cuando sea necesario, solicitamos tu consentimiento para cookies no esenciales.",
+
+  "typesTitle": "Tipos de cookies",
+  "types": {
+    "li1": "Esenciales: necesarias para el funcionamiento y la seguridad del sitio.",
+    "li2": "Preferencias: recuerdan elecciones como el idioma.",
+    "li3": "Analítica: ayudan a comprender el uso del sitio y mejorar la experiencia.",
+    "li4": "Marketing: se usan para medir campañas o mostrar mensajes relevantes si están activadas."
+  },
+
+  "usedTitle": "Cookies utilizadas",
+  "usedText": "Actualmente, este sitio utiliza cookies esenciales y puede guardar preferencias de idioma.",
+
+  "manageTitle": "Gestionar cookies",
+  "manageText": "Puedes controlar las cookies desde la configuración de tu navegador. Bloquear cookies puede afectar a algunas funciones del sitio.",
+
+  "updated": "Última actualización: 2026"
+}
 }
